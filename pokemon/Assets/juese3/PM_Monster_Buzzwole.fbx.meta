@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: a91b3be1381cc1a4b8a4b5d386e7e9fc
+timeCreated: 1564492457
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone003
+    100002: Bone003(mirrored)
+    100004: Bone003(mirrored) 1
+    100006: Bone003(mirrored)(mirrored)
+    100008: Boot
+    100010: Head
+    100012: IK Chain001
+    100014: IK Chain002
+    100016: IK Chain003
+    100018: IK Chain004
+    100020: L_Finger01
+    100022: L_Finger02
+    100024: L_Finger03
+    100026: L_Finger04
+    100028: L_Forearm
+    100030: L_Hand
+    100032: L_Jiao01
+    100034: L_Jiao02
+    100036: L_Jiao03
+    100038: L_Jiao04
+    100040: L_Shldr
+    100042: L_Upperarm
+    100044: L_Wing01
+    100046: L_Wing02
+    100048: L_Wing03
+    100050: L_Xu01
+    100052: L_Xu02
+    100054: Neck
+    100056: Pelvis
+    100058: //RootNode
+    100060: PM_Monster_Buzzwole
+    100062: PM_Monster_Buzzwole_Body
+    100064: PM_Monster_Buzzwole_Body_0
+    100066: R_Finger01
+    100068: R_Finger02
+    100070: R_Finger03
+    100072: R_Finger04
+    100074: R_Forearm
+    100076: R_Hand
+    100078: R_Jiao01
+    100080: R_Jiao02
+    100082: R_Jiao03
+    100084: R_Jiao04
+    100086: R_Shldr
+    100088: R_Upperarm
+    100090: R_Wing01
+    100092: R_Wing02
+    100094: R_Wing03
+    100096: R_Xu01
+    100098: R_Xu02
+    100100: Spine
+    100102: Spine01
+    400000: Bone003
+    400002: Bone003(mirrored)
+    400004: Bone003(mirrored) 1
+    400006: Bone003(mirrored)(mirrored)
+    400008: Boot
+    400010: Head
+    400012: IK Chain001
+    400014: IK Chain002
+    400016: IK Chain003
+    400018: IK Chain004
+    400020: L_Finger01
+    400022: L_Finger02
+    400024: L_Finger03
+    400026: L_Finger04
+    400028: L_Forearm
+    400030: L_Hand
+    400032: L_Jiao01
+    400034: L_Jiao02
+    400036: L_Jiao03
+    400038: L_Jiao04
+    400040: L_Shldr
+    400042: L_Upperarm
+    400044: L_Wing01
+    400046: L_Wing02
+    400048: L_Wing03
+    400050: L_Xu01
+    400052: L_Xu02
+    400054: Neck
+    400056: Pelvis
+    400058: //RootNode
+    400060: PM_Monster_Buzzwole
+    400062: PM_Monster_Buzzwole_Body
+    400064: PM_Monster_Buzzwole_Body_0
+    400066: R_Finger01
+    400068: R_Finger02
+    400070: R_Finger03
+    400072: R_Finger04
+    400074: R_Forearm
+    400076: R_Hand
+    400078: R_Jiao01
+    400080: R_Jiao02
+    400082: R_Jiao03
+    400084: R_Jiao04
+    400086: R_Shldr
+    400088: R_Upperarm
+    400090: R_Wing01
+    400092: R_Wing02
+    400094: R_Wing03
+    400096: R_Xu01
+    400098: R_Xu02
+    400100: Spine
+    400102: Spine01
+    4300000: PM_Monster_Buzzwole_Body_0
+    7400000: buffact
+    7400002: dead
+    7400004: debuffact
+    7400006: fall
+    7400008: hit
+    7400010: hurt
+    7400012: idle
+    7400014: move
+    7400016: speact
+    7400018: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Buzzwole_Body_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

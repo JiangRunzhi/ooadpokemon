@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 88acb1130214c924282d1a23862d7a6c
+timeCreated: 1564492302
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Head
+    100004: L_Calf
+    100006: L_Clavicle
+    100008: L_Finger0
+    100010: L_Finger01
+    100012: L_Foot
+    100014: L_Forearm
+    100016: L_Hand
+    100018: L_Thigh
+    100020: L_Toe0
+    100022: L_UpperArm
+    100024: Neck
+    100026: Pelvis
+    100028: PM_Monster_Cubone
+    100030: //RootNode
+    100032: PM_Monster_Cubone 1
+    100034: PM_Monster_Cubone_0
+    100036: PM_Monster_Cubone_Eye
+    100038: PM_Monster_Cubone_Eye_0
+    100040: R_Calf
+    100042: R_Clavicle
+    100044: R_Finger0
+    100046: R_Finger01
+    100048: R_Foot
+    100050: R_Forearm
+    100052: R_Hand
+    100054: R_Thigh
+    100056: R_Toe0
+    100058: R_UpperArm
+    100060: Spine
+    100062: Spine1
+    100064: Weiba01
+    100066: Weiba02
+    100068: Wuqi01
+    400000: Boot
+    400002: Head
+    400004: L_Calf
+    400006: L_Clavicle
+    400008: L_Finger0
+    400010: L_Finger01
+    400012: L_Foot
+    400014: L_Forearm
+    400016: L_Hand
+    400018: L_Thigh
+    400020: L_Toe0
+    400022: L_UpperArm
+    400024: Neck
+    400026: Pelvis
+    400028: //RootNode
+    400030: PM_Monster_Cubone
+    400032: PM_Monster_Cubone 1
+    400034: PM_Monster_Cubone_0
+    400036: PM_Monster_Cubone_Eye
+    400038: PM_Monster_Cubone_Eye_0
+    400040: R_Calf
+    400042: R_Clavicle
+    400044: R_Finger0
+    400046: R_Finger01
+    400048: R_Foot
+    400050: R_Forearm
+    400052: R_Hand
+    400054: R_Thigh
+    400056: R_Toe0
+    400058: R_UpperArm
+    400060: Spine
+    400062: Spine1
+    400064: Weiba01
+    400066: Weiba02
+    400068: Wuqi01
+    4300000: PM_Monster_Cubone_0
+    4300002: PM_Monster_Cubone_Eye_0
+    7400000: bufact
+    7400002: buffact
+    7400004: crash
+    7400006: dead
+    7400008: debufact
+    7400010: debuffact
+    7400012: fall
+    7400014: hit
+    7400016: hurt
+    7400018: idle
+    7400020: move
+    7400022: snarl
+    7400024: speact
+    7400026: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Cubone_0
+    13700002: PM_Monster_Cubone_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

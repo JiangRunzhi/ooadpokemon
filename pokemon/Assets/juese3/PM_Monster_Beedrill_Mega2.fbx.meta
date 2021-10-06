@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 2ceed74bd4826ce469bb18a37a098f2f
+timeCreated: 1564491839
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone032
+    100002: Bone032(mirrored)
+    100004: Bone033
+    100006: Bone033(mirrored)
+    100008: Boot
+    100010: Head
+    100012: L_Calf
+    100014: L_Chibang01
+    100016: L_Chibang02
+    100018: L_Chibang03
+    100020: L_Chibang04
+    100022: L_Chibang05
+    100024: L_Chibang06
+    100026: L_Chibang07
+    100028: L_Forearm
+    100030: L_Hand
+    100032: L_Thigh
+    100034: L_Upperarm
+    100036: Pelvis
+    100038: Pelvis01
+    100040: Pelvis02
+    100042: PM_Monster_Beedrill_Mega2
+    100044: //RootNode
+    100046: PM_Monster_Beedrill_Mega2 1
+    100048: PM_Monster_Beedrill_Mega2_0
+    100050: R_Calf
+    100052: R_Chibang01
+    100054: R_Chibang02
+    100056: R_Chibang03
+    100058: R_Chibang04
+    100060: R_Chibang05
+    100062: R_Chibang06
+    100064: R_Chibang07
+    100066: R_Forearm
+    100068: R_Hand
+    100070: R_Thigh
+    100072: R_Upperarm
+    100074: Xu01
+    100076: Xu02
+    100078: Xu03
+    100080: Xu04
+    400000: Bone032
+    400002: Bone032(mirrored)
+    400004: Bone033
+    400006: Bone033(mirrored)
+    400008: Boot
+    400010: Head
+    400012: L_Calf
+    400014: L_Chibang01
+    400016: L_Chibang02
+    400018: L_Chibang03
+    400020: L_Chibang04
+    400022: L_Chibang05
+    400024: L_Chibang06
+    400026: L_Chibang07
+    400028: L_Forearm
+    400030: L_Hand
+    400032: L_Thigh
+    400034: L_Upperarm
+    400036: Pelvis
+    400038: Pelvis01
+    400040: Pelvis02
+    400042: //RootNode
+    400044: PM_Monster_Beedrill_Mega2
+    400046: PM_Monster_Beedrill_Mega2 1
+    400048: PM_Monster_Beedrill_Mega2_0
+    400050: R_Calf
+    400052: R_Chibang01
+    400054: R_Chibang02
+    400056: R_Chibang03
+    400058: R_Chibang04
+    400060: R_Chibang05
+    400062: R_Chibang06
+    400064: R_Chibang07
+    400066: R_Forearm
+    400068: R_Hand
+    400070: R_Thigh
+    400072: R_Upperarm
+    400074: Xu01
+    400076: Xu02
+    400078: Xu03
+    400080: Xu04
+    4300000: PM_Monster_Beedrill_Mega2_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: hurt
+    7400010: idle
+    7400012: move
+    7400014: speact
+    7400016: stun
+    7400018: wing
+    9500000: //RootNode
+    13700000: PM_Monster_Beedrill_Mega2_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 704c19da774b64f46851b4e9a8d00ece
+timeCreated: 1564492193
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Hair01
+    100004: Hair02
+    100006: Hair03
+    100008: Hair04
+    100010: Head
+    100012: L_Calf
+    100014: L_Clavicle
+    100016: L_Finger0
+    100018: L_Finger01
+    100020: L_Finger1
+    100022: L_Finger11
+    100024: L_Finger2
+    100026: L_Finger21
+    100028: L_Foot
+    100030: L_Forearm
+    100032: L_Hand
+    100034: L_Thigh
+    100036: L_Toe0
+    100038: L_UpperArm
+    100040: L_wing01
+    100042: L_wing02
+    100044: L_wing03
+    100046: L_wing04
+    100048: L_yi01
+    100050: L_yi02
+    100052: L_yi03
+    100054: L_yi04
+    100056: L_yi05
+    100058: L_yi06
+    100060: L_yi07
+    100062: Neck
+    100064: Pelvis
+    100066: //RootNode
+    100068: PM_Monster_Decidueye_Mega2
+    100070: PM_Monster_Decidueye_Mega2 1
+    100072: PM_Monster_Decidueye_Mega2_0
+    100074: PM_Monster_Decidueye_Mega2_Eye
+    100076: PM_Monster_Decidueye_Mega2_Eye_0
+    100078: R_Calf
+    100080: R_Clavicle
+    100082: R_Finger0
+    100084: R_Finger01
+    100086: R_Finger1
+    100088: R_Finger11
+    100090: R_Finger2
+    100092: R_Finger21
+    100094: R_Foot
+    100096: R_Forearm
+    100098: R_Hand
+    100100: R_Thigh
+    100102: R_Toe0
+    100104: R_UpperArm
+    100106: R_wing01
+    100108: R_wing02
+    100110: R_wing03
+    100112: R_wing04
+    100114: R_yi01
+    100116: R_yi02
+    100118: R_yi03
+    100120: R_yi04
+    100122: R_yi05
+    100124: R_yi06
+    100126: R_yi07
+    100128: Spine
+    100130: Spine1
+    100132: Tail01
+    100134: Tail02
+    100136: yi03
+    100138: yi04
+    400000: Boot
+    400002: Hair01
+    400004: Hair02
+    400006: Hair03
+    400008: Hair04
+    400010: Head
+    400012: L_Calf
+    400014: L_Clavicle
+    400016: L_Finger0
+    400018: L_Finger01
+    400020: L_Finger1
+    400022: L_Finger11
+    400024: L_Finger2
+    400026: L_Finger21
+    400028: L_Foot
+    400030: L_Forearm
+    400032: L_Hand
+    400034: L_Thigh
+    400036: L_Toe0
+    400038: L_UpperArm
+    400040: L_wing01
+    400042: L_wing02
+    400044: L_wing03
+    400046: L_wing04
+    400048: L_yi01
+    400050: L_yi02
+    400052: L_yi03
+    400054: L_yi04
+    400056: L_yi05
+    400058: L_yi06
+    400060: L_yi07
+    400062: Neck
+    400064: Pelvis
+    400066: //RootNode
+    400068: PM_Monster_Decidueye_Mega2
+    400070: PM_Monster_Decidueye_Mega2 1
+    400072: PM_Monster_Decidueye_Mega2_0
+    400074: PM_Monster_Decidueye_Mega2_Eye
+    400076: PM_Monster_Decidueye_Mega2_Eye_0
+    400078: R_Calf
+    400080: R_Clavicle
+    400082: R_Finger0
+    400084: R_Finger01
+    400086: R_Finger1
+    400088: R_Finger11
+    400090: R_Finger2
+    400092: R_Finger21
+    400094: R_Foot
+    400096: R_Forearm
+    400098: R_Hand
+    400100: R_Thigh
+    400102: R_Toe0
+    400104: R_UpperArm
+    400106: R_wing01
+    400108: R_wing02
+    400110: R_wing03
+    400112: R_wing04
+    400114: R_yi01
+    400116: R_yi02
+    400118: R_yi03
+    400120: R_yi04
+    400122: R_yi05
+    400124: R_yi06
+    400126: R_yi07
+    400128: Spine
+    400130: Spine1
+    400132: Tail01
+    400134: Tail02
+    400136: yi03
+    400138: yi04
+    4300000: PM_Monster_Decidueye_Mega2_0
+    4300002: PM_Monster_Decidueye_Mega2_Eye_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: fall
+    7400010: gush
+    7400012: hit
+    7400014: hurt
+    7400016: idle
+    7400018: move
+    7400020: speact
+    7400022: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Decidueye_Mega2_0
+    13700002: PM_Monster_Decidueye_Mega2_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: ac99ca014084721418be96ebae4a34cc
+timeCreated: 1564492472
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Ear1
+    100004: Ear2
+    100006: Ear3
+    100008: Ear4
+    100010: Ear5
+    100012: Ear6
+    100014: Ear7
+    100016: Ear8
+    100018: L_Foot
+    100020: L_Hand
+    100022: Leaf1
+    100024: Leaf2
+    100026: Leaf3
+    100028: Leaf4
+    100030: Leaf5
+    100032: Leaf6
+    100034: Leaf7
+    100036: Leaf8
+    100038: objmesh02
+    100040: objmesh02_0
+    100042: //RootNode
+    100044: PM_Monster_Cosmog
+    100046: PM_Monster_Cosmog 1
+    100048: PM_Monster_Cosmog_0
+    100050: R_Foot
+    100052: R_Hand
+    100054: Tail
+    400000: Boot
+    400002: Ear1
+    400004: Ear2
+    400006: Ear3
+    400008: Ear4
+    400010: Ear5
+    400012: Ear6
+    400014: Ear7
+    400016: Ear8
+    400018: L_Foot
+    400020: L_Hand
+    400022: Leaf1
+    400024: Leaf2
+    400026: Leaf3
+    400028: Leaf4
+    400030: Leaf5
+    400032: Leaf6
+    400034: Leaf7
+    400036: Leaf8
+    400038: objmesh02
+    400040: objmesh02_0
+    400042: //RootNode
+    400044: PM_Monster_Cosmog
+    400046: PM_Monster_Cosmog 1
+    400048: PM_Monster_Cosmog_0
+    400050: R_Foot
+    400052: R_Hand
+    400054: Tail
+    4300000: objmesh02_0
+    4300002: PM_Monster_Cosmog_0
+    7400000: buffact
+    7400002: dead
+    7400004: debuffact
+    7400006: hurt
+    7400008: idle
+    7400010: move
+    7400012: speact
+    7400014: stun
+    7400016: victory
+    9500000: //RootNode
+    13700000: objmesh02_0
+    13700002: PM_Monster_Cosmog_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

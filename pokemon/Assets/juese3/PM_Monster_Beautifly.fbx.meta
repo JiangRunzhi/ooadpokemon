@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: c6bdf022522be3e4b9e8f6634c9fc544
+timeCreated: 1564492624
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Dbz01
+    100004: Dbz02
+    100006: Dbz03
+    100008: Dbz04
+    100010: Dbz05
+    100012: Dbz06
+    100014: Dbz07
+    100016: Head
+    100018: L_Chibang01
+    100020: L_Chibang02
+    100022: L_Chibang03
+    100024: L_Chibang04
+    100026: L_Chibang05
+    100028: L_Chibang06
+    100030: L_Chibang07
+    100032: L_Chibang08
+    100034: L_Chibang09
+    100036: L_Chibang10
+    100038: L_Foot
+    100040: L_Hand
+    100042: L_Xu01
+    100044: L_Xu02
+    100046: L_Xu03
+    100048: L_Xu04
+    100050: L_Xu05
+    100052: PM_Monster_Beautifly
+    100054: //RootNode
+    100056: PM_Monster_Beautifly 1
+    100058: PM_Monster_Beautifly_0
+    100060: R_Chibang01
+    100062: R_Chibang02
+    100064: R_Chibang03
+    100066: R_Chibang04
+    100068: R_Chibang05
+    100070: R_Chibang06
+    100072: R_Chibang07
+    100074: R_Chibang08
+    100076: R_Chibang09
+    100078: R_Chibang10
+    100080: R_Foot
+    100082: R_Hand
+    100084: R_Xu01
+    100086: R_Xu02
+    100088: R_Xu03
+    100090: R_Xu04
+    100092: R_Xu05
+    100094: Spine
+    400000: Boot
+    400002: Dbz01
+    400004: Dbz02
+    400006: Dbz03
+    400008: Dbz04
+    400010: Dbz05
+    400012: Dbz06
+    400014: Dbz07
+    400016: Head
+    400018: L_Chibang01
+    400020: L_Chibang02
+    400022: L_Chibang03
+    400024: L_Chibang04
+    400026: L_Chibang05
+    400028: L_Chibang06
+    400030: L_Chibang07
+    400032: L_Chibang08
+    400034: L_Chibang09
+    400036: L_Chibang10
+    400038: L_Foot
+    400040: L_Hand
+    400042: L_Xu01
+    400044: L_Xu02
+    400046: L_Xu03
+    400048: L_Xu04
+    400050: L_Xu05
+    400052: //RootNode
+    400054: PM_Monster_Beautifly
+    400056: PM_Monster_Beautifly 1
+    400058: PM_Monster_Beautifly_0
+    400060: R_Chibang01
+    400062: R_Chibang02
+    400064: R_Chibang03
+    400066: R_Chibang04
+    400068: R_Chibang05
+    400070: R_Chibang06
+    400072: R_Chibang07
+    400074: R_Chibang08
+    400076: R_Chibang09
+    400078: R_Chibang10
+    400080: R_Foot
+    400082: R_Hand
+    400084: R_Xu01
+    400086: R_Xu02
+    400088: R_Xu03
+    400090: R_Xu04
+    400092: R_Xu05
+    400094: Spine
+    4300000: PM_Monster_Beautifly_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: hurt
+    7400010: idle
+    7400012: move
+    7400014: speact
+    7400016: stun
+    7400018: wing
+    9500000: //RootNode
+    13700000: PM_Monster_Beautifly_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

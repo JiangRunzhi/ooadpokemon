@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: c2af42fb44cc23743bae855f98b8be98
+timeCreated: 1564492596
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001 Footsteps
+    100002: Boot
+    100004: Head
+    100006: L_Calf
+    100008: L_Clavicle
+    100010: L_Er01
+    100012: L_Er02
+    100014: L_Foot
+    100016: L_Forearm
+    100018: L_Hand
+    100020: L_Thigh
+    100022: L_Toe
+    100024: L_UpperArm
+    100026: Neck
+    100028: Pelvis
+    100030: //RootNode
+    100032: PM_Monster_Combatpikachu
+    100034: PM_Monster_Combatpikachu 1
+    100036: PM_Monster_Combatpikachu_0
+    100038: PM_Monster_Combatpikachu_Eye
+    100040: PM_Monster_Combatpikachu_Eye_0
+    100042: PM_Monster_Combatpikachu_Mouth
+    100044: PM_Monster_Combatpikachu_Mouth_0
+    100046: R_Calf
+    100048: R_Clavicle
+    100050: R_Er01
+    100052: R_Er02
+    100054: R_Foot
+    100056: R_Forearm
+    100058: R_Hand
+    100060: R_Thigh
+    100062: R_Toe
+    100064: R_UpperArm
+    100066: Spine
+    100068: Spine01
+    100070: Weiba01
+    100072: Weiba02
+    100074: Weiba03
+    400000: Bip001 Footsteps
+    400002: Boot
+    400004: Head
+    400006: L_Calf
+    400008: L_Clavicle
+    400010: L_Er01
+    400012: L_Er02
+    400014: L_Foot
+    400016: L_Forearm
+    400018: L_Hand
+    400020: L_Thigh
+    400022: L_Toe
+    400024: L_UpperArm
+    400026: Neck
+    400028: Pelvis
+    400030: //RootNode
+    400032: PM_Monster_Combatpikachu
+    400034: PM_Monster_Combatpikachu 1
+    400036: PM_Monster_Combatpikachu_0
+    400038: PM_Monster_Combatpikachu_Eye
+    400040: PM_Monster_Combatpikachu_Eye_0
+    400042: PM_Monster_Combatpikachu_Mouth
+    400044: PM_Monster_Combatpikachu_Mouth_0
+    400046: R_Calf
+    400048: R_Clavicle
+    400050: R_Er01
+    400052: R_Er02
+    400054: R_Foot
+    400056: R_Forearm
+    400058: R_Hand
+    400060: R_Thigh
+    400062: R_Toe
+    400064: R_UpperArm
+    400066: Spine
+    400068: Spine01
+    400070: Weiba01
+    400072: Weiba02
+    400074: Weiba03
+    4300000: PM_Monster_Combatpikachu_0
+    4300002: PM_Monster_Combatpikachu_Eye_0
+    4300004: PM_Monster_Combatpikachu_Mouth_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: fall
+    7400010: hurt
+    7400012: idle
+    7400014: move
+    7400016: speact
+    7400018: stun
+    7400020: tail
+    9500000: //RootNode
+    13700000: PM_Monster_Combatpikachu_0
+    13700002: PM_Monster_Combatpikachu_Eye_0
+    13700004: PM_Monster_Combatpikachu_Mouth_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

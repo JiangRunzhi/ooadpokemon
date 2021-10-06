@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 7456b5a175c6f7b459bcf4349acf427d
+timeCreated: 1564492215
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Head
+    100004: L_Calf
+    100006: L_Clavicle
+    100008: L_Foot
+    100010: L_Forearm
+    100012: L_Thigh
+    100014: L_Toe0
+    100016: L_UpperArm
+    100018: Neck
+    100020: Pelvis
+    100022: Piao01
+    100024: Piao02
+    100026: Piao03
+    100028: Piao04
+    100030: Piao05
+    100032: Piao06
+    100034: Piao07
+    100036: Piao08
+    100038: Piao09
+    100040: Piao10
+    100042: Piao11
+    100044: Piao12
+    100046: //RootNode
+    100048: PM_Monster_Breloom
+    100050: PM_Monster_Breloom 1
+    100052: PM_Monster_Breloom_0
+    100054: PM_Monster_Breloom_Eye
+    100056: PM_Monster_Breloom_Eye_0
+    100058: R_Calf
+    100060: R_Clavicle
+    100062: R_Foot
+    100064: R_Forearm
+    100066: R_Thigh
+    100068: R_Toe0
+    100070: R_UpperArm
+    100072: Spine
+    100074: Spine1
+    100076: Weiba01
+    100078: Weiba02
+    100080: Weiba03
+    100082: Weiba04
+    100084: Weiba05
+    100086: Weiba06
+    100088: Weiba07
+    100090: Zuiba01
+    400000: Boot
+    400002: Head
+    400004: L_Calf
+    400006: L_Clavicle
+    400008: L_Foot
+    400010: L_Forearm
+    400012: L_Thigh
+    400014: L_Toe0
+    400016: L_UpperArm
+    400018: Neck
+    400020: Pelvis
+    400022: Piao01
+    400024: Piao02
+    400026: Piao03
+    400028: Piao04
+    400030: Piao05
+    400032: Piao06
+    400034: Piao07
+    400036: Piao08
+    400038: Piao09
+    400040: Piao10
+    400042: Piao11
+    400044: Piao12
+    400046: //RootNode
+    400048: PM_Monster_Breloom
+    400050: PM_Monster_Breloom 1
+    400052: PM_Monster_Breloom_0
+    400054: PM_Monster_Breloom_Eye
+    400056: PM_Monster_Breloom_Eye_0
+    400058: R_Calf
+    400060: R_Clavicle
+    400062: R_Foot
+    400064: R_Forearm
+    400066: R_Thigh
+    400068: R_Toe0
+    400070: R_UpperArm
+    400072: Spine
+    400074: Spine1
+    400076: Weiba01
+    400078: Weiba02
+    400080: Weiba03
+    400082: Weiba04
+    400084: Weiba05
+    400086: Weiba06
+    400088: Weiba07
+    400090: Zuiba01
+    4300000: PM_Monster_Breloom_0
+    4300002: PM_Monster_Breloom_Eye_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: fall
+    7400010: hit
+    7400012: hurt
+    7400014: idle
+    7400016: move
+    7400018: speact
+    7400020: stun
+    7400022: tail
+    9500000: //RootNode
+    13700000: PM_Monster_Breloom_0
+    13700002: PM_Monster_Breloom_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

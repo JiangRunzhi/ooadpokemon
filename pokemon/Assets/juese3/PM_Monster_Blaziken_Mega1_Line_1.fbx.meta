@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 4a8b3a83e0f2b2241930d9a519f8a82d
+timeCreated: 1564491995
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Head
+    100004: L_Calf
+    100006: L_Clavicle
+    100008: L_Foot
+    100010: L_Forearm
+    100012: L_hair1
+    100014: L_hair2
+    100016: L_Hand
+    100018: L_piao01
+    100020: L_piao02
+    100022: L_piao03
+    100024: L_piao04
+    100026: L_piao05
+    100028: L_piao06
+    100030: L_piao07
+    100032: L_piao08
+    100034: L_piao09
+    100036: L_piao10
+    100038: L_piao11
+    100040: L_piao12
+    100042: L_piao13
+    100044: L_Thigh
+    100046: L_Toe0
+    100048: L_UpperArm
+    100050: Neck
+    100052: Pelvis
+    100054: //RootNode
+    100056: PM_Monster_Blaziken_Mega1_Line_1
+    100058: PM_Monster_Blaziken_Mega1_Line_1 1
+    100060: PM_Monster_Blaziken_Mega1_Line_1_0
+    100062: PM_Monster_Blaziken_Mega1_Line_1_Eye
+    100064: PM_Monster_Blaziken_Mega1_Line_1_Eye_0
+    100066: PM_Monster_Blaziken_Mega1_Line_1_Lpiao
+    100068: PM_Monster_Blaziken_Mega1_Line_1_Lpiao_0
+    100070: PM_Monster_Blaziken_Mega1_Line_1_Rpiao
+    100072: PM_Monster_Blaziken_Mega1_Line_1_Rpiao_0
+    100074: R_Calf
+    100076: R_Clavicle
+    100078: R_Foot
+    100080: R_Forearm
+    100082: R_hair1
+    100084: R_hair2
+    100086: R_Hand
+    100088: R_piao01
+    100090: R_piao02
+    100092: R_piao03
+    100094: R_piao04
+    100096: R_piao05
+    100098: R_piao06
+    100100: R_piao07
+    100102: R_piao08
+    100104: R_piao09
+    100106: R_piao10
+    100108: R_piao11
+    100110: R_piao12
+    100112: R_piao13
+    100114: R_Thigh
+    100116: R_Toe0
+    100118: R_UpperArm
+    100120: Spine
+    100122: Spine1
+    400000: Boot
+    400002: Head
+    400004: L_Calf
+    400006: L_Clavicle
+    400008: L_Foot
+    400010: L_Forearm
+    400012: L_hair1
+    400014: L_hair2
+    400016: L_Hand
+    400018: L_piao01
+    400020: L_piao02
+    400022: L_piao03
+    400024: L_piao04
+    400026: L_piao05
+    400028: L_piao06
+    400030: L_piao07
+    400032: L_piao08
+    400034: L_piao09
+    400036: L_piao10
+    400038: L_piao11
+    400040: L_piao12
+    400042: L_piao13
+    400044: L_Thigh
+    400046: L_Toe0
+    400048: L_UpperArm
+    400050: Neck
+    400052: Pelvis
+    400054: //RootNode
+    400056: PM_Monster_Blaziken_Mega1_Line_1
+    400058: PM_Monster_Blaziken_Mega1_Line_1 1
+    400060: PM_Monster_Blaziken_Mega1_Line_1_0
+    400062: PM_Monster_Blaziken_Mega1_Line_1_Eye
+    400064: PM_Monster_Blaziken_Mega1_Line_1_Eye_0
+    400066: PM_Monster_Blaziken_Mega1_Line_1_Lpiao
+    400068: PM_Monster_Blaziken_Mega1_Line_1_Lpiao_0
+    400070: PM_Monster_Blaziken_Mega1_Line_1_Rpiao
+    400072: PM_Monster_Blaziken_Mega1_Line_1_Rpiao_0
+    400074: R_Calf
+    400076: R_Clavicle
+    400078: R_Foot
+    400080: R_Forearm
+    400082: R_hair1
+    400084: R_hair2
+    400086: R_Hand
+    400088: R_piao01
+    400090: R_piao02
+    400092: R_piao03
+    400094: R_piao04
+    400096: R_piao05
+    400098: R_piao06
+    400100: R_piao07
+    400102: R_piao08
+    400104: R_piao09
+    400106: R_piao10
+    400108: R_piao11
+    400110: R_piao12
+    400112: R_piao13
+    400114: R_Thigh
+    400116: R_Toe0
+    400118: R_UpperArm
+    400120: Spine
+    400122: Spine1
+    4300000: PM_Monster_Blaziken_Mega1_Line_1_0
+    4300002: PM_Monster_Blaziken_Mega1_Line_1_Eye_0
+    4300004: PM_Monster_Blaziken_Mega1_Line_1_Lpiao_0
+    4300006: PM_Monster_Blaziken_Mega1_Line_1_Rpiao_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: fall
+    7400010: gush
+    7400012: hit
+    7400014: hurt
+    7400016: idle
+    7400018: move
+    7400020: snarl
+    7400022: speact
+    7400024: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Blaziken_Mega1_Line_1_0
+    13700002: PM_Monster_Blaziken_Mega1_Line_1_Eye_0
+    13700004: PM_Monster_Blaziken_Mega1_Line_1_Lpiao_0
+    13700006: PM_Monster_Blaziken_Mega1_Line_1_Rpiao_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
