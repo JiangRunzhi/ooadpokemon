@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: fdcbd6bced5ba4f45afc0e9d7edd1434
+timeCreated: 1564492948
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Head
+    100004: L_Calf
+    100006: L_Cb01
+    100008: L_Cb02
+    100010: L_Cb03
+    100012: L_Cb04
+    100014: L_Cb05
+    100016: L_Cb06
+    100018: L_Cb07
+    100020: L_Clavicle
+    100022: L_Finger0
+    100024: L_Foot
+    100026: L_Forearm
+    100028: L_Hand
+    100030: L_Thigh
+    100032: L_Toe
+    100034: L_UpperArm
+    100036: Mounts_point
+    100038: Neck
+    100040: Neck1
+    100042: Pelvis
+    100044: //RootNode
+    100046: PM_Monster_Charizard_Mega1_Line_1
+    100048: PM_Monster_Charizard_Mega1_Line_1 1
+    100050: PM_Monster_Charizard_Mega1_Line_1_0
+    100052: PM_Monster_Charizard_Mega1_Line_1_Eye
+    100054: PM_Monster_Charizard_Mega1_Line_1_Eye_0
+    100056: R_Calf
+    100058: R_Cb01
+    100060: R_Cb02
+    100062: R_Cb03
+    100064: R_Cb04
+    100066: R_Cb05
+    100068: R_Cb06
+    100070: R_Cb07
+    100072: R_Clavicle
+    100074: R_Finger0
+    100076: R_Foot
+    100078: R_Forearm
+    100080: R_Hand
+    100082: R_Thigh
+    100084: R_Toe
+    100086: R_UpperArm
+    100088: Spine
+    100090: Spine01
+    100092: Weiba01
+    100094: Weiba02
+    100096: Weiba03
+    100098: Weiba04
+    100100: Zui
+    400000: Boot
+    400002: Head
+    400004: L_Calf
+    400006: L_Cb01
+    400008: L_Cb02
+    400010: L_Cb03
+    400012: L_Cb04
+    400014: L_Cb05
+    400016: L_Cb06
+    400018: L_Cb07
+    400020: L_Clavicle
+    400022: L_Finger0
+    400024: L_Foot
+    400026: L_Forearm
+    400028: L_Hand
+    400030: L_Thigh
+    400032: L_Toe
+    400034: L_UpperArm
+    400036: Mounts_point
+    400038: Neck
+    400040: Neck1
+    400042: Pelvis
+    400044: //RootNode
+    400046: PM_Monster_Charizard_Mega1_Line_1
+    400048: PM_Monster_Charizard_Mega1_Line_1 1
+    400050: PM_Monster_Charizard_Mega1_Line_1_0
+    400052: PM_Monster_Charizard_Mega1_Line_1_Eye
+    400054: PM_Monster_Charizard_Mega1_Line_1_Eye_0
+    400056: R_Calf
+    400058: R_Cb01
+    400060: R_Cb02
+    400062: R_Cb03
+    400064: R_Cb04
+    400066: R_Cb05
+    400068: R_Cb06
+    400070: R_Cb07
+    400072: R_Clavicle
+    400074: R_Finger0
+    400076: R_Foot
+    400078: R_Forearm
+    400080: R_Hand
+    400082: R_Thigh
+    400084: R_Toe
+    400086: R_UpperArm
+    400088: Spine
+    400090: Spine01
+    400092: Weiba01
+    400094: Weiba02
+    400096: Weiba03
+    400098: Weiba04
+    400100: Zui
+    4300000: PM_Monster_Charizard_Mega1_Line_1_0
+    4300002: PM_Monster_Charizard_Mega1_Line_1_Eye_0
+    7400000: dead
+    7400002: debuffact
+    7400004: gush
+    7400006: hit
+    7400008: hurt
+    7400010: idle
+    7400012: mounts_idle
+    7400014: mounts_move
+    7400016: move
+    7400018: snarl
+    7400020: speact
+    7400022: stun
+    7400024: tail
+    7400026: wing
+    9500000: //RootNode
+    13700000: PM_Monster_Charizard_Mega1_Line_1_0
+    13700002: PM_Monster_Charizard_Mega1_Line_1_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

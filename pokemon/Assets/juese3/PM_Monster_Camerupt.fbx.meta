@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 8c9369183485b6a42be4c2c4c8d22210
+timeCreated: 1564492321
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001 Footsteps
+    100002: Boot
+    100004: Ear1
+    100006: Ear2
+    100008: Ear3
+    100010: Ear4
+    100012: Fair1
+    100014: Fair2
+    100016: Fair3
+    100018: Fair4
+    100020: Fair5
+    100022: Fair6
+    100024: Head
+    100026: L_Calf
+    100028: L_Clavicle
+    100030: L_Foot
+    100032: L_Forearm
+    100034: L_Hand
+    100036: L_Thigh
+    100038: L_Toe
+    100040: L_UpperArm
+    100042: Mouth
+    100044: Neck
+    100046: Pelvis
+    100048: //RootNode
+    100050: PM_Monster_Camerupt
+    100052: PM_Monster_Camerupt 1
+    100054: PM_Monster_Camerupt_0
+    100056: PM_Monster_Camerupt_Eye
+    100058: PM_Monster_Camerupt_Eye_0
+    100060: R_Calf
+    100062: R_Clavicle
+    100064: R_Foot
+    100066: R_Forearm
+    100068: R_Hand
+    100070: R_Thigh
+    100072: R_Toe
+    100074: R_UpperArm
+    100076: Spine
+    100078: Spine1
+    100080: Tail1
+    100082: Tail2
+    400000: Bip001 Footsteps
+    400002: Boot
+    400004: Ear1
+    400006: Ear2
+    400008: Ear3
+    400010: Ear4
+    400012: Fair1
+    400014: Fair2
+    400016: Fair3
+    400018: Fair4
+    400020: Fair5
+    400022: Fair6
+    400024: Head
+    400026: L_Calf
+    400028: L_Clavicle
+    400030: L_Foot
+    400032: L_Forearm
+    400034: L_Hand
+    400036: L_Thigh
+    400038: L_Toe
+    400040: L_UpperArm
+    400042: Mouth
+    400044: Neck
+    400046: Pelvis
+    400048: //RootNode
+    400050: PM_Monster_Camerupt
+    400052: PM_Monster_Camerupt 1
+    400054: PM_Monster_Camerupt_0
+    400056: PM_Monster_Camerupt_Eye
+    400058: PM_Monster_Camerupt_Eye_0
+    400060: R_Calf
+    400062: R_Clavicle
+    400064: R_Foot
+    400066: R_Forearm
+    400068: R_Hand
+    400070: R_Thigh
+    400072: R_Toe
+    400074: R_UpperArm
+    400076: Spine
+    400078: Spine1
+    400080: Tail1
+    400082: Tail2
+    4300000: PM_Monster_Camerupt_0
+    4300002: PM_Monster_Camerupt_Eye_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: gush
+    7400010: hurt
+    7400012: idle
+    7400014: move
+    7400016: speact
+    7400018: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Camerupt_0
+    13700002: PM_Monster_Camerupt_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

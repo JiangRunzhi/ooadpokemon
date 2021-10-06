@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637686972390023052
-    m_Hash: 1801632052
+      ticks: 637686992488813947
+    m_Hash: 3554385736
   m_LockFileStatus:
     m_FilePath: D:/ooad/ooadpokemon/pokemon/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637686972452117980
-    m_Hash: 3641642830
+      ticks: 637686992488813947
+    m_Hash: 2623524056
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
