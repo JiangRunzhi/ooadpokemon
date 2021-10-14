@@ -221,6 +221,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 35e0a72ca914a964695325696b24dd04, type: 3}
   m_PrefabInstance: {fileID: 2089399719}
   m_PrefabAsset: {fileID: 0}
+--- !u!195 &820169210
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820169207}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: e184f95224f7c4a408a0094752267c52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.0980697
+      value: 7.1
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: e184f95224f7c4a408a0094752267c52, type: 3}
       propertyPath: m_LocalPosition.y
@@ -341,7 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: e184f95224f7c4a408a0094752267c52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1
+      value: 10.31
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: e184f95224f7c4a408a0094752267c52, type: 3}
       propertyPath: m_LocalRotation.w
@@ -396,6 +418,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 1878889930}
   cube2: {fileID: 820169207}
+--- !u!195 &1878889934
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878889930}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &2089399719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -433,7 +477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35e0a72ca914a964695325696b24dd04, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1
+      value: 10.31
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35e0a72ca914a964695325696b24dd04, type: 3}
       propertyPath: m_LocalRotation.w
