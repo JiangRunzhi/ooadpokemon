@@ -52,11 +52,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\move.cs" />
-     <Compile Include="Assets\testTransPosition.cs" />
-     <Compile Include="Assets\combatControl_A.cs" />
-     <Compile Include="Assets\combatControl_B.cs" />
-     <Compile Include="Assets\motion.cs" />
+     <Compile Include="Assets\scripts\testTransPosition.cs" />
+     <Compile Include="Assets\scripts\combatControl_A.cs" />
+     <Compile Include="Assets\scripts\combatControl_B.cs" />
+     <None Include="Assets\AddOns\MgLEGO Danger Zone\Danger Zone Readme.txt" />
  <Reference Include="UnityEngine">
  <HintPath>D:/develop_tools/unity/Unity/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
