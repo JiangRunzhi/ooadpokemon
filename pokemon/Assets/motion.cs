@@ -52,42 +52,42 @@ public class motion : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             cube1.transform.Translate(new Vector3(0, 0, 1) * 1);
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.S))
         {
             cube1.transform.Translate(new Vector3(0, 0, 1) * -1 );
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.A))
         {
             cube1.transform.Rotate(new Vector3(0, 1, 0) * -1 );
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.D))
         {
             cube1.transform.Rotate(new Vector3(0, 1, 0) * 1);
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.UpArrow))
         {
-            cube2.transform.Translate(new Vector3(0, 0, 1) * 1 );
-            Thread.Sleep(500);
+            cube2.transform.Translate(new Vector3(0, 0, 1) * 1);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             cube2.transform.Translate(new Vector3(0, 0, 1) * -1 );
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             cube2.transform.Rotate(new Vector3(0, 1, 0) * -1 );
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             cube2.transform.Rotate(new Vector3(0, 1, 0) * 1 );
-            Thread.Sleep(500);
+            Thread.Sleep(30);
         }
     }
 }
