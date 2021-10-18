@@ -20,6 +20,5 @@ public class testTransPosition : MonoBehaviour
             newPosition.x += _animator.GetFloat("runSpeed") * Time.deltaTime; 
             transform.position = newPosition;
         }
-
     }
 }

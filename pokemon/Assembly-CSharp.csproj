@@ -52,10 +52,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\EasyPolyMap\Code\EPMPolyTerrainCreator.cs" />
+     <Compile Include="Assets\EasyPolyMap\Demos\EPMDemoCharacterController.cs" />
      <Compile Include="Assets\scripts\testTransPosition.cs" />
+     <Compile Include="Assets\EasyPolyMap\Demos\EPMDemoScene.cs" />
      <Compile Include="Assets\scripts\combatControl_A.cs" />
      <Compile Include="Assets\scripts\combatControl_B.cs" />
+     <Compile Include="Assets\EasyPolyMap\Code\EPMObjExporter.cs" />
+     <Compile Include="Assets\EasyPolyMap\Code\EPMMaterialAgent.cs" />
+     <Compile Include="Assets\EasyPolyMap\Code\EPMPreDefinedTools.cs" />
+     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\AddOns\MgLEGO Danger Zone\Danger Zone Readme.txt" />
+     <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\Circle_Island_Data.txt" />
+     <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\BunnyIsland.txt" />
+     <None Include="Assets\EasyPolyMap\3rdParty\readme.txt" />
+     <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\BasicTerrain.txt" />
+     <None Include="Assets\EasyPolyMap\Demos\SpringIsland\SpringIsland_data.txt" />
+     <None Include="Assets\EasyPolyMap\Demos\AutumnVally\AutumnVally_data.txt" />
+     <None Include="Assets\EasyPolyMap\Documents\StepByStepDemoData.txt" />
  <Reference Include="UnityEngine">
  <HintPath>D:/develop_tools/unity/Unity/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -277,6 +291,12 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>D:/develop_tools/unity/Unity/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="EasyPolyMapCore">
+ <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Assets/EasyPolyMap/Code/EasyPolyMapCore.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Assets/EasyPolyMap/3rdParty/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/develop_tools/unity/Unity/2020.3.18f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

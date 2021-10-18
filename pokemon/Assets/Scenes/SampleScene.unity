@@ -366,6 +366,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0014825228
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.002093032
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000986418
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.36914125
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.049991418
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.36645088
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.8526133
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 36.013
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 26.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: e184f95224f7c4a408a0094752267c52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -124.564
+      objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: e184f95224f7c4a408a0094752267c52, type: 3}
       propertyPath: m_Controller
       value: 
