@@ -690,6 +690,9 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
