@@ -52,20 +52,35 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Unity UI Samples\Scripts\ResizePanel.cs" />
      <Compile Include="Assets\EasyPolyMap\Code\EPMPolyTerrainCreator.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\DragPanel.cs" />
      <Compile Include="Assets\EasyPolyMap\Demos\EPMDemoCharacterController.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\PanelManager.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\ApplicationManager.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\ActiveStateToggler.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\DragMe.cs" />
      <Compile Include="Assets\scripts\testTransPosition.cs" />
      <Compile Include="Assets\EasyPolyMap\Demos\EPMDemoScene.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\ShowSliderValue.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\ScrollDetailTexture.cs" />
      <Compile Include="Assets\scripts\combatControl_A.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\DropMe.cs" />
      <Compile Include="Assets\scripts\combatControl_B.cs" />
      <Compile Include="Assets\EasyPolyMap\Code\EPMObjExporter.cs" />
      <Compile Include="Assets\EasyPolyMap\Code\EPMMaterialAgent.cs" />
      <Compile Include="Assets\EasyPolyMap\Code\EPMPreDefinedTools.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\ChangeColor.cs" />
+     <Compile Include="Assets\Unity UI Samples\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\scripts\MainUI_scripts\Skip.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\AddOns\MgLEGO Danger Zone\Danger Zone Readme.txt" />
      <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\Circle_Island_Data.txt" />
+     <None Include="Assets\Unity UI Samples\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+     <None Include="Assets\Unity UI Samples\Materials\UI-Default-No-Alpha.shader" />
      <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\BunnyIsland.txt" />
      <None Include="Assets\EasyPolyMap\3rdParty\readme.txt" />
+     <None Include="Assets\Unity UI Samples\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\BasicTerrain.txt" />
      <None Include="Assets\EasyPolyMap\Demos\SpringIsland\SpringIsland_data.txt" />
      <None Include="Assets\EasyPolyMap\Demos\AutumnVally\AutumnVally_data.txt" />
