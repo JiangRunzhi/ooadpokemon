@@ -73,6 +73,7 @@
      <Compile Include="Assets\EasyPolyMap\Code\EPMPreDefinedTools.cs" />
      <Compile Include="Assets\Unity UI Samples\Scripts\ChangeColor.cs" />
      <Compile Include="Assets\Unity UI Samples\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\scripts\PointCamera.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\AddOns\MgLEGO Danger Zone\Danger Zone Readme.txt" />
      <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\Circle_Island_Data.txt" />
@@ -676,6 +677,9 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -687,9 +691,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>F:/A_OOAD/pokemon/ooadpokemon/ooadpokemon/pokemon/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
