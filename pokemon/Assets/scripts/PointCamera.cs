@@ -11,8 +11,8 @@ public class PointCamera : MonoBehaviour
     float sensitivityMX = 10;//平移x轴灵敏度参数
     float sensitivityMY = 10;//平移y轴灵敏度参数
     float sensitivityD = 10;//镜头前后移动灵敏度参数
-    private float rotationX = 0;//初始镜头角度
-    private float rotationY = 0;//初始镜头角度
+    float rotationX = 0;//初始镜头角度
+    float rotationY = 0;//初始镜头角度
     
     void Start() 
     {
