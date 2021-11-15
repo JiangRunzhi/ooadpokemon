@@ -6,6 +6,14 @@ using UnityEngine;
 public class combatControl_B : MonoBehaviour
 {
     private Animator _animator;
+    public static bool action3 = false;
+    public static bool action4 = false;
+    public static int assist1 = 0;
+
+    public static int frame_counter3 = 0;
+    public static int frame_counter4 = 0;
+    public static bool hurt = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,52 +24,116 @@ public class combatControl_B : MonoBehaviour
     void Update()
     {
         //go forward
+        if (action3)
+        {
+            frame_counter3++;
+        }
+
+        if (action4)
+        {
+            frame_counter4++;
+        }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+            action3 = true;
+            action4 = true;
+            frame_counter3 = 0;
+            frame_counter4 = 0;
             _animator.SetBool("walk", true);
             _animator.SetFloat("runSpeed", -5.0f);
         }
 
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (frame_counter3==290)
         {
             _animator.SetBool("walk", false);
             _animator.SetFloat("runSpeed", 0f);
+            _animator.SetBool("hit", true);
+            action3 = false;
         }
-        
-        //go back
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (frame_counter4==500)
+        {
+            _animator.SetBool("hit",false);
+            action4 = false;
+            action3 = true;
+        }
+
+        if (frame_counter3>490&&frame_counter3<510)//这个地方其实就是在840ms时执行的动作，但由于这个动作的启动时间超过了一帧，所以设定在接下来20帧都执行这个动作来确保小火龙开始walk
         {
             _animator.SetBool("walk", true);
             _animator.SetFloat("runSpeed", 5.0f);
         }
 
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (frame_counter3==780)
         {
             _animator.SetBool("walk", false);
             _animator.SetFloat("runSpeed", 0f);
+            action3 = false;
         }
         
-        //hit
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            _animator.SetBool("hit", true);
-        }
-        
-        if (Input.GetKeyUp(KeyCode.N))
-        {
-            _animator.SetBool("hit", false);
-        }
-        
+
+        // if (Input.GetKeyUp(KeyCode.UpArrow))
+        // {
+        //     _animator.SetBool("walk", false);
+        //     _animator.SetFloat("runSpeed", 0f);
+        //     _animator.SetBool("hit", true);
+        //     action3 = false;
+        // }
+        //
+        // //go back
+        // if (Input.GetKeyDown(KeyCode.DownArrow))
+        // {
+        //     _animator.SetBool("walk", true);
+        //     _animator.SetFloat("runSpeed", 5.0f);
+        // }
+        //
+        // if (Input.GetKeyUp(KeyCode.DownArrow))
+        // {
+        //     _animator.SetBool("walk", false);
+        //     _animator.SetFloat("runSpeed", 0f);
+        // }
+        //
+        // //hit
+        // if (Input.GetKeyDown(KeyCode.N))
+        // {
+        //     _animator.SetBool("hit", true);
+        // }
+        //
+        // if (Input.GetKeyUp(KeyCode.N))
+        // {
+        //     _animator.SetBool("hit", false);
+        // }
+
         //hurt
         if (Input.GetKeyDown(KeyCode.J))
         {
             _animator.SetBool("hurt", true);
         }
-        
+
         if (Input.GetKeyUp(KeyCode.J))
         {
             _animator.SetBool("hurt", false);
         }
-        
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            hurt = true;
+            assist1 = 0;
+        }
+
+        if (hurt)
+        {
+            assist1++;
+        }
+
+        if (assist1>340&&assist1<400)
+        {
+            _animator.SetBool("hurt",true);
+        }
+
+        if (assist1==600)
+        {
+            _animator.SetBool("hurt",false);
+            hurt = false;
+        }
     }
 }
