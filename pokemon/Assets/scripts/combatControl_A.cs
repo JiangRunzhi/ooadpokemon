@@ -17,12 +17,13 @@ public class combatControl_A : MonoBehaviour
         _animator.SetBool("walk", false);
         _animator.SetBool("hit", false);
         _animator.SetBool("hurt", false);
-        
+        Application.targetFrameRate = 90;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("当前帧率：" + 1/(float)Time.deltaTime);
         print(frame_counter1);
         if (action1)
         {
