@@ -18,6 +18,7 @@ public class combatControl_B : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
+        Application.targetFrameRate = 30;
     }
 
     // Update is called once per frame
@@ -43,27 +44,27 @@ public class combatControl_B : MonoBehaviour
             _animator.SetFloat("runSpeed", -5.0f);
         }
 
-        if (frame_counter3==290)
+        if (frame_counter3==60)
         {
             _animator.SetBool("walk", false);
             _animator.SetFloat("runSpeed", 0f);
             _animator.SetBool("hit", true);
             action3 = false;
         }
-        if (frame_counter4==500)
+        if (frame_counter4==100)
         {
             _animator.SetBool("hit",false);
             action4 = false;
             action3 = true;
         }
 
-        if (frame_counter3>490&&frame_counter3<510)//这个地方其实就是在840ms时执行的动作，但由于这个动作的启动时间超过了一帧，所以设定在接下来20帧都执行这个动作来确保小火龙开始walk
+        if (frame_counter3>110&&frame_counter3<130)//这个地方其实就是在840ms时执行的动作，但由于这个动作的启动时间超过了一帧，所以设定在接下来20帧都执行这个动作来确保小火龙开始walk
         {
             _animator.SetBool("walk", true);
             _animator.SetFloat("runSpeed", 5.0f);
         }
 
-        if (frame_counter3==780)
+        if (frame_counter3==172)
         {
             _animator.SetBool("walk", false);
             _animator.SetFloat("runSpeed", 0f);
@@ -125,12 +126,12 @@ public class combatControl_B : MonoBehaviour
             assist1++;
         }
 
-        if (assist1>340&&assist1<400)
+        if (assist1>60&&assist1<100)
         {
             _animator.SetBool("hurt",true);
         }
 
-        if (assist1==600)
+        if (assist1==120)
         {
             _animator.SetBool("hurt",false);
             hurt = false;
