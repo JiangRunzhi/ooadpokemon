@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class Skip : MonoBehaviour
 {
     public void change_scene(int sc){
-        SceneManager.LoadScene (sc);
+        SceneManager.LoadScene(sc);
     }
 }
