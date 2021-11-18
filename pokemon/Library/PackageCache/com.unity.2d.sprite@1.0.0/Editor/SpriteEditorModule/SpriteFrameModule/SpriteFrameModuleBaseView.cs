@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 using UnityEngine;
@@ -687,8 +686,7 @@ namespace UnityEditor.U2D.Sprites
                 Vector4 border = GetSpriteBorderAt(i);
                 if (m_GizmoMode != GizmoMode.BorderEditing && (m_RectsCache != null && m_RectsCache.spriteRects[i].spriteID != selectedGUID))
                 {
-                    // border does not contain negative values
-                    if (border.sqrMagnitude < Mathf.Epsilon * 8)
+                    if (Mathf.Approximately(border.sqrMagnitude, 0))
                         continue;
                 }
 
@@ -711,23 +709,6 @@ namespace UnityEditor.U2D.Sprites
                 SpriteEditorUtility.DrawBox(r);
                 SpriteEditorUtility.EndLines();
             }
-        }
-
-        protected void DrawRectGizmos(IEnumerable<Rect> rects, Color color)
-        {
-            if (eventSystem.current.type != EventType.Repaint)
-                return;
-
-            SpriteEditorUtility.BeginLines(color);
-            foreach (var rect in rects)
-            {
-                SpriteEditorUtility.DrawLine(new Vector3(rect.xMin, rect.yMin), new Vector3(rect.xMin, rect.yMax));
-                SpriteEditorUtility.DrawLine(new Vector3(rect.xMax, rect.yMin), new Vector3(rect.xMax, rect.yMax));
-
-                SpriteEditorUtility.DrawLine(new Vector3(rect.xMin, rect.yMin), new Vector3(rect.xMax, rect.yMin));
-                SpriteEditorUtility.DrawLine(new Vector3(rect.xMin, rect.yMax), new Vector3(rect.xMax, rect.yMax));
-            }
-            SpriteEditorUtility.EndLines();
         }
 
         // implements ISpriteEditorModule
