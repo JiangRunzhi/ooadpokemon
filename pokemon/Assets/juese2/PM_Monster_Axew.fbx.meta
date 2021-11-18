@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: d91251c2967218041843db16d7039dcf
+timeCreated: 1564492727
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Head
+    100004: Head01
+    100006: Head02
+    100008: Head03
+    100010: L_Calf
+    100012: L_Clavicle
+    100014: L_Foot
+    100016: L_Forearm
+    100018: L_Hand
+    100020: L_Thigh
+    100022: L_UpperArm
+    100024: Neck
+    100026: Pelvis
+    100028: //RootNode
+    100030: PM_Monster_Axew
+    100032: PM_Monster_Axew_Body
+    100034: PM_Monster_Axew_Body_0
+    100036: PM_Monster_Axew_Eye
+    100038: PM_Monster_Axew_Eye_0
+    100040: R_Calf
+    100042: R_Clavicle
+    100044: R_Foot
+    100046: R_Forearm
+    100048: R_Hand
+    100050: R_Thigh
+    100052: R_UpperArm
+    100054: Spine
+    100056: Spine1
+    100058: Weiba01
+    100060: Weiba02
+    100062: Weiba03
+    100064: Zuiba01
+    400000: Boot
+    400002: Head
+    400004: Head01
+    400006: Head02
+    400008: Head03
+    400010: L_Calf
+    400012: L_Clavicle
+    400014: L_Foot
+    400016: L_Forearm
+    400018: L_Hand
+    400020: L_Thigh
+    400022: L_UpperArm
+    400024: Neck
+    400026: Pelvis
+    400028: //RootNode
+    400030: PM_Monster_Axew
+    400032: PM_Monster_Axew_Body
+    400034: PM_Monster_Axew_Body_0
+    400036: PM_Monster_Axew_Eye
+    400038: PM_Monster_Axew_Eye_0
+    400040: R_Calf
+    400042: R_Clavicle
+    400044: R_Foot
+    400046: R_Forearm
+    400048: R_Hand
+    400050: R_Thigh
+    400052: R_UpperArm
+    400054: Spine
+    400056: Spine1
+    400058: Weiba01
+    400060: Weiba02
+    400062: Weiba03
+    400064: Zuiba01
+    4300000: PM_Monster_Axew_Body_0
+    4300002: PM_Monster_Axew_Eye_0
+    7400000: buffact
+    7400002: crash
+    7400004: dead
+    7400006: debuffact
+    7400008: fall
+    7400010: gush
+    7400012: idle
+    7400014: speact
+    7400016: stun
+    7400018: victory
+    9500000: //RootNode
+    13700000: PM_Monster_Axew_Body_0
+    13700002: PM_Monster_Axew_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

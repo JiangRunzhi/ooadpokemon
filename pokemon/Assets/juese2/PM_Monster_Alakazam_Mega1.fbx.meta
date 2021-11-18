@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 89956424fa29b8146bee03dd58c5adef
+timeCreated: 1564492307
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Beard1
+    100002: Beard2
+    100004: Beard3
+    100006: Bip001 Footsteps
+    100008: Boot
+    100010: Head
+    100012: L_Calf
+    100014: L_Clavicle
+    100016: L_Finger1
+    100018: L_Finger2
+    100020: L_Finger3
+    100022: L_Finger4
+    100024: L_Finger5
+    100026: L_Finger6
+    100028: L_Foot
+    100030: L_Forearm
+    100032: L_Hand
+    100034: L_Thigh
+    100036: L_Toe
+    100038: L_UpperArm
+    100040: Mustache1
+    100042: Mustache2
+    100044: Mustache3
+    100046: Mustache4
+    100048: Mustache5
+    100050: Mustache6
+    100052: Mustache7
+    100054: Mustache8
+    100056: Neck
+    100058: Pelvis
+    100060: PM_Monster_Alakazam
+    100062: PM_Monster_Alakazam_0
+    100064: PM_Monster_Alakazam_Eye
+    100066: PM_Monster_Alakazam_Eye_0
+    100068: PM_Monster_Alakazam_Mega1
+    100070: //RootNode
+    100072: R_Calf
+    100074: R_Clavicle
+    100076: R_Finger1
+    100078: R_Finger2
+    100080: R_Finger3
+    100082: R_Finger4
+    100084: R_Finger5
+    100086: R_Finger6
+    100088: R_Foot
+    100090: R_Forearm
+    100092: R_Hand
+    100094: R_Thigh
+    100096: R_Toe
+    100098: R_UpperArm
+    100100: Scoop1
+    100102: Scoop10
+    100104: Scoop2
+    100106: Scoop3
+    100108: Scoop4
+    100110: Scoop5
+    100112: Scoop6
+    100114: Scoop7
+    100116: Scoop8
+    100118: Scoop9
+    100120: Spine
+    100122: Spine1
+    100124: Xiuzi1
+    100126: Xiuzi2
+    400000: Beard1
+    400002: Beard2
+    400004: Beard3
+    400006: Bip001 Footsteps
+    400008: Boot
+    400010: Head
+    400012: L_Calf
+    400014: L_Clavicle
+    400016: L_Finger1
+    400018: L_Finger2
+    400020: L_Finger3
+    400022: L_Finger4
+    400024: L_Finger5
+    400026: L_Finger6
+    400028: L_Foot
+    400030: L_Forearm
+    400032: L_Hand
+    400034: L_Thigh
+    400036: L_Toe
+    400038: L_UpperArm
+    400040: Mustache1
+    400042: Mustache2
+    400044: Mustache3
+    400046: Mustache4
+    400048: Mustache5
+    400050: Mustache6
+    400052: Mustache7
+    400054: Mustache8
+    400056: Neck
+    400058: Pelvis
+    400060: PM_Monster_Alakazam
+    400062: PM_Monster_Alakazam_0
+    400064: PM_Monster_Alakazam_Eye
+    400066: PM_Monster_Alakazam_Eye_0
+    400068: //RootNode
+    400070: PM_Monster_Alakazam_Mega1
+    400072: R_Calf
+    400074: R_Clavicle
+    400076: R_Finger1
+    400078: R_Finger2
+    400080: R_Finger3
+    400082: R_Finger4
+    400084: R_Finger5
+    400086: R_Finger6
+    400088: R_Foot
+    400090: R_Forearm
+    400092: R_Hand
+    400094: R_Thigh
+    400096: R_Toe
+    400098: R_UpperArm
+    400100: Scoop1
+    400102: Scoop10
+    400104: Scoop2
+    400106: Scoop3
+    400108: Scoop4
+    400110: Scoop5
+    400112: Scoop6
+    400114: Scoop7
+    400116: Scoop8
+    400118: Scoop9
+    400120: Spine
+    400122: Spine1
+    400124: Xiuzi1
+    400126: Xiuzi2
+    4300000: PM_Monster_Alakazam_0
+    4300002: PM_Monster_Alakazam_Eye_0
+    7400000: buffact
+    7400002: dead
+    7400004: debuffact
+    7400006: fall
+    7400008: hit
+    7400010: hurt
+    7400012: idle
+    7400014: move
+    7400016: speact
+    7400018: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Alakazam_0
+    13700002: PM_Monster_Alakazam_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
