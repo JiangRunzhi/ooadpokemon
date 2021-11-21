@@ -24,12 +24,12 @@ public class LARH : MonoBehaviour
         judge1 = true;
         if (which)
         {
-            p1 = new Vector3(5, 0, 5);
+            p1 = new Vector3(3, 0, 5);
             p2 = new Vector3(-10, 0, 5);
         }
         else
         {
-            p1 = new Vector3(-5, 0, 5);
+            p1 = new Vector3(-3, 0, 5);
             p2 = new Vector3(10, 0, 5);
         }
     }
@@ -45,9 +45,8 @@ public class LARH : MonoBehaviour
         }
         else if (judge1)
         {
-            animator1.SetBool("move", false);
             animator1.SetTrigger("hit");
-            Invoke("hurt",0.2f);
+            Invoke("hurt",0.4f);
             judge1 = false;
         }
         else

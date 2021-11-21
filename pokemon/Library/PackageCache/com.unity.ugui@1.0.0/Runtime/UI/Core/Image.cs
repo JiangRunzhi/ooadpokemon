@@ -870,7 +870,7 @@ namespace UnityEngine.UI
 
         private void TrackSprite()
         {
-            if (activeSprite != null && activeSprite.texture == null)
+            if (activeSprite != null && (activeSprite.texture == null || activeSprite.isUsingPlaceholder))
             {
                 TrackImage(this);
                 m_Tracked = true;
@@ -1848,7 +1848,10 @@ namespace UnityEngine.UI
                 if (null != g.activeSprite && spriteAtlas.CanBindTo(g.activeSprite))
                 {
                     g.SetAllDirty();
-                    m_TrackedTexturelessImages.RemoveAt(i);
+                    if (!spriteAtlas.IsPlaceholder())
+                    {
+                        m_TrackedTexturelessImages.RemoveAt(i);
+                    }
                 }
             }
         }
