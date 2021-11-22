@@ -14,13 +14,13 @@ public class SampleMethods : MonoBehaviour
 
     public void Appear()
     {
-        animatorController.GetComponent<AppearController>().Set("bird1",true);
+        //animatorController.GetComponent<AppearController>().Set("bird1",true);
         animatorController.GetComponent<AppearAnimation>().Set("bird1");
         animatorController.GetComponent<AppearAnimation>().enabled = true;
     }
     
     public void Disappear()
     {
-        animatorController.GetComponent<AppearController>().Set("bird1",false);
+        //animatorController.GetComponent<AppearController>().Set("bird1",false);
     }
 }

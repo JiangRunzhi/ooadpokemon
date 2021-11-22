@@ -7,23 +7,31 @@ public class Program : MonoBehaviour
     // public int[] a = GameObject.Find("Content").SendMessage("getSelectedPokemons");
     //
     public static int[] a = ChoosePokemon.selectedPokemons;
-    private static GameObject ac;
+    //private static GameObject ac;
     public static void dataControl(int[] a)
     {
-        ac = GameObject.Find("AnimatorController");
+        
         elfChoose(a);//在最开始输入使用的精灵
         recordBattle.nowLeft = recordBattle.elf[0];//初始化左边出战的第一个精灵
         recordBattle.nowRight = recordBattle.elf[3];//初始化右边出战的第一个精灵
         Debug.Log(Translate(recordBattle.elf[0],1));
-        ac.GetComponent<AppearController>().Set("bird1",true);
-        ac.GetComponent<AppearAnimation>().Set("bird1");
-        ac.GetComponent<AppearAnimation>().enabled = true;
-        ac.GetComponent<AppearController>().Set(Translate(recordBattle.elf[3],2),true);
-        ac.GetComponent<AppearAnimation>().Set(Translate(recordBattle.elf[3],2));
-        ac.GetComponent<AppearAnimation>().enabled = true;
+        //
+        // ac.GetComponent<AppearController>().Set("bird1",true);
+        // ac.GetComponent<AppearAnimation>().Set("bird1");
+        // ac.GetComponent<AppearAnimation>().enabled = true;
+        // ac.GetComponent<AppearController>().Set(Translate(recordBattle.elf[3],2),true);
+        // ac.GetComponent<AppearAnimation>().Set(Translate(recordBattle.elf[3],2));
+        // ac.GetComponent<AppearAnimation>().enabled = true;
         iniPropertyLeft();
         iniPropertyRight();
         engine();
+    }
+
+    public static void testappear()
+    {
+        //GameObject.Find("AnimatorController").SendMessage("Set","bird1");
+        GameObject go = GameObject.Find("AnimatorController");
+        go.GetComponent<AppearController>().Set("bird1",true);
     }
 
     public static void iniPropertyLeft()
