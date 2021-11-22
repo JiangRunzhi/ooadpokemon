@@ -7,11 +7,20 @@ public class Program : MonoBehaviour
     // public int[] a = GameObject.Find("Content").SendMessage("getSelectedPokemons");
     //
     public static int[] a = ChoosePokemon.selectedPokemons;
+    private static GameObject ac;
     public static void dataControl(int[] a)
     {
+        ac = GameObject.Find("AnimatorController");
         elfChoose(a);//在最开始输入使用的精灵
         recordBattle.nowLeft = recordBattle.elf[0];//初始化左边出战的第一个精灵
         recordBattle.nowRight = recordBattle.elf[3];//初始化右边出战的第一个精灵
+        Debug.Log(Translate(recordBattle.elf[0],1));
+        ac.GetComponent<AppearController>().Set("bird1",true);
+        ac.GetComponent<AppearAnimation>().Set("bird1");
+        ac.GetComponent<AppearAnimation>().enabled = true;
+        ac.GetComponent<AppearController>().Set(Translate(recordBattle.elf[3],2),true);
+        ac.GetComponent<AppearAnimation>().Set(Translate(recordBattle.elf[3],2));
+        ac.GetComponent<AppearAnimation>().enabled = true;
         iniPropertyLeft();
         iniPropertyRight();
         engine();
@@ -251,5 +260,33 @@ public class Program : MonoBehaviour
             }
         }
         // break;
+    }
+
+    public static string Translate(int input, int number)
+    {
+        switch (input)
+        {
+            case 0:
+                return "seed" + number;
+                break;
+            case 1:
+                return "dragon" + number;
+                break;
+            case 2:
+                return "turtle" + number;
+                break;
+            case 3:
+                return "bird" + number;
+                break;
+            case 4:
+                return "mouse" + number;
+                break;
+            case 5:
+                return "mud" + number;
+                break;
+            default:
+                return "seed" + number;
+                break;
+        }
     }
 }

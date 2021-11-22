@@ -8,7 +8,8 @@ public class DataControler : MonoBehaviour
     private Button skillABtn, skillBBtn, skillCBtn, skillDBtn, skillA1Btn, skillB1Btn, skillC1Btn, skillD1Btn;
     Transform root;
 
-    void Start () {
+    void Start ()
+    {
         //获得脚本挂的Transform
         root = this.transform;
         //获取场景中按钮的引用

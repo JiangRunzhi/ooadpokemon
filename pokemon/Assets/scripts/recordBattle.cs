@@ -17,5 +17,5 @@ public class recordBattle : MonoBehaviour
     public static int attackRight = 0;
     public static int speedRight = 0;
     // Start is called before the first frame update
-
 }
+
