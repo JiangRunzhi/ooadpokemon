@@ -6,7 +6,7 @@ public class BuffAnimation : MonoBehaviour
 {
     public GameObject pokemon;
     public Animator animator;
-    void Start()
+    void Update()
     {
         animator = pokemon.GetComponent<Animator>();
         animator.SetTrigger("buff");

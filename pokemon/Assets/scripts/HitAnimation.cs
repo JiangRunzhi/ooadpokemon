@@ -38,6 +38,18 @@ public class HitAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator1 = pokemon1.GetComponent<Animator>();
+        animator2 = pokemon2.GetComponent<Animator>();
+        if (leftHitRight)
+        {
+            p1 = new Vector3(4, 0, 5);
+            p2 = new Vector3(-10, 0, 5);
+        }
+        else
+        {
+            p1 = new Vector3(-4, 0, 5);
+            p2 = new Vector3(10, 0, 5);
+        }
         if (judge1 && pokemon1.transform.position != p1)
         {
             animator1.SetBool("move",true);
@@ -107,6 +119,7 @@ public class HitAnimation : MonoBehaviour
         {
             judge1 = true;
             animator1.SetBool("move", false);
+            judge1 = true;
             enabled = false;
         }
     }

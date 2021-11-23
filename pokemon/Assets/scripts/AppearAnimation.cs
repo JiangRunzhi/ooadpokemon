@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ public class AppearAnimation : MonoBehaviour
 {
     public GameObject pokemon;
     public Animator animator;
-    void Start()
+
+    void Update()
     {
         animator = pokemon.GetComponent<Animator>();
         animator.SetTrigger("appear");

@@ -11,6 +11,7 @@ public class SpecialAnimation : MonoBehaviour
     public GameObject pokemon2;
     public Animator animator1;
     public Animator animator2;
+    public bool judge;
     public bool leftHitRight;
     public bool dodge;
     public bool dead;
@@ -20,14 +21,48 @@ public class SpecialAnimation : MonoBehaviour
     {
         animator1 = pokemon1.GetComponent<Animator>();
         animator2 = pokemon2.GetComponent<Animator>();
+        if (leftHitRight)
+        {
+            p1 = new Vector3(14, 0, 5);
+            p2 = new Vector3(10, 0, 5);
+        }
+        else
+        {
+            p1 = new Vector3(-14, 0, 5);
+            p2 = new Vector3(-10, 0, 5);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        animator1.SetTrigger("special");
+        if (leftHitRight)
+        {
+            p1 = new Vector3(14, 0, 5);
+            p2 = new Vector3(10, 0, 5);
+        }
+        else
+        {
+            p1 = new Vector3(-14, 0, 5);
+            p2 = new Vector3(-10, 0, 5);
+        }
+        animator1 = pokemon1.GetComponent<Animator>();
+        animator2 = pokemon2.GetComponent<Animator>();
+        if (judge)
+        {
+            animator1.SetTrigger("special");
+            judge = false;
+        }
         Invoke("hurt",1f);
-        enabled = false;
+        if (pokemon2.transform.position != p2)
+        {
+            pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
+        }
+        else
+        {
+            judge = true;
+            enabled = false;
+        }
     }
     
     
@@ -35,14 +70,7 @@ public class SpecialAnimation : MonoBehaviour
     {
         if (dodge)
         {
-            if (leftHitRight)
-            {
-                pokemon2.transform.position = new Vector3(14, 0, 5);
-            }
-            else
-            {
-                pokemon2.transform.position = new Vector3(-14, 0, 5);
-            }
+            pokemon2.transform.position = p1;
         }
         else if (dead)
         {

@@ -33,5 +33,6 @@ public class CameraSwitch : MonoBehaviour
     public void Set(String pokemonName)
     {
         pokemon = GameObject.Find(pokemonName);
+        frame = Time.frameCount;
     }
 }

@@ -28,7 +28,6 @@ namespace UnityEditor.UI
         SerializedProperty m_HideMobileInput;
         SerializedProperty m_Placeholder;
         SerializedProperty m_OnValueChanged;
-        SerializedProperty m_OnSubmit;
         SerializedProperty m_OnEndEdit;
         SerializedProperty m_ReadOnly;
         SerializedProperty m_ShouldActivateOnSelect;
@@ -54,7 +53,6 @@ namespace UnityEditor.UI
             m_HideMobileInput = serializedObject.FindProperty("m_HideMobileInput");
             m_Placeholder = serializedObject.FindProperty("m_Placeholder");
             m_OnValueChanged = serializedObject.FindProperty("m_OnValueChanged");
-            m_OnSubmit = serializedObject.FindProperty("m_OnSubmit");
             m_OnEndEdit = serializedObject.FindProperty("m_OnEndEdit");
             m_ReadOnly = serializedObject.FindProperty("m_ReadOnly");
             m_ShouldActivateOnSelect = serializedObject.FindProperty("m_ShouldActivateOnSelect");
@@ -139,7 +137,6 @@ namespace UnityEditor.UI
                 EditorGUILayout.Space();
 
                 EditorGUILayout.PropertyField(m_OnValueChanged);
-                EditorGUILayout.PropertyField(m_OnSubmit);
                 EditorGUILayout.PropertyField(m_OnEndEdit);
             }
 
