@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: f62d558f722630147be8b262cf7d13f7
+timeCreated: 1564492030
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bady
+    100002: Head
+    100004: L_Hand
+    100006: //RootNode
+    100008: PM_Monster_Ditto
+    100010: PM_Monster_Ditto 1
+    100012: PM_Monster_Ditto_0
+    100014: PM_Monster_Ditto_Eye
+    100016: PM_Monster_Ditto_Eye_0
+    100018: PM_Monster_Ditto_Mouth
+    100020: PM_Monster_Ditto_Mouth_0
+    100022: R_Hand
+    400000: Bady
+    400002: Head
+    400004: L_Hand
+    400006: //RootNode
+    400008: PM_Monster_Ditto
+    400010: PM_Monster_Ditto 1
+    400012: PM_Monster_Ditto_0
+    400014: PM_Monster_Ditto_Eye
+    400016: PM_Monster_Ditto_Eye_0
+    400018: PM_Monster_Ditto_Mouth
+    400020: PM_Monster_Ditto_Mouth_0
+    400022: R_Hand
+    4300000: PM_Monster_Ditto_0
+    4300002: PM_Monster_Ditto_Eye_0
+    4300004: PM_Monster_Ditto_Mouth_0
+    7400000: buffact
+    7400002: dead
+    7400004: fall
+    7400006: hurt
+    7400008: idle
+    7400010: move
+    7400012: speact
+    7400014: stun
+    9500000: //RootNode
+    13700000: PM_Monster_Ditto_0
+    13700002: PM_Monster_Ditto_Eye_0
+    13700004: PM_Monster_Ditto_Mouth_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

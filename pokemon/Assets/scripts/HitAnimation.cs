@@ -22,7 +22,6 @@ public class HitAnimation : MonoBehaviour
         animator1 = pokemon1.GetComponent<Animator>();
         animator2 = pokemon2.GetComponent<Animator>();
         animator1.SetBool("move", false);
-        animator1.SetBool("hit", false);
         judge1 = true;
         if (leftHitRight)
         {

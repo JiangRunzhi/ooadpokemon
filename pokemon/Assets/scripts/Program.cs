@@ -32,6 +32,8 @@ public class Program : MonoBehaviour
         //GameObject.Find("AnimatorController").SendMessage("Set","bird1");
         GameObject go = GameObject.Find("AnimatorController");
         go.GetComponent<AppearController>().Set("bird1",true);
+        go.GetComponent<AppearAnimation>().Set("bird1");
+        go.GetComponent<AppearAnimation>().enabled = true;
     }
 
     public static void iniPropertyLeft()

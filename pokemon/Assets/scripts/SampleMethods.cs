@@ -23,4 +23,10 @@ public class SampleMethods : MonoBehaviour
     {
         //animatorController.GetComponent<AppearController>().Set("bird1",false);
     }
+
+    public void SpecialSkill()
+    {
+        animatorController.GetComponent<SpecialAnimation>().Set("seed1","seed2",true,false,false);
+        animatorController.GetComponent<SpecialAnimation>().enabled = true;
+    }
 }
