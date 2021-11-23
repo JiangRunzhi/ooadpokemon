@@ -905,6 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorController: {fileID: 1535360518}
+  mainCamera: {fileID: 963194225}
 --- !u!1001 &586424308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,6 +998,10 @@ PrefabInstance:
     - target: {fileID: 100028, guid: ebf95197b62ad194494e30e15768454c, type: 3}
       propertyPath: m_Name
       value: seed1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: ebf95197b62ad194494e30e15768454c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: ebf95197b62ad194494e30e15768454c, type: 3}
       propertyPath: m_RootOrder
@@ -1221,7 +1226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SpecialSkill
+      value: Appear
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1830,6 +1835,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1915,6 +1921,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa8ee98fa7e15f41bc4080f66826faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1960a508894900b4d86f599879bcf4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemon: {fileID: 0}
+  frame: 0
 --- !u!1 &975512713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,7 +3011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: ebf95197b62ad194494e30e15768454c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: ebf95197b62ad194494e30e15768454c, type: 3}
       propertyPath: m_RootOrder

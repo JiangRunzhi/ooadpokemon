@@ -77,6 +77,7 @@
      <Compile Include="Assets\EasyPolyMap\Code\EPMPreDefinedTools.cs" />
      <Compile Include="Assets\Unity UI Samples\Scripts\ChangeColor.cs" />
      <Compile Include="Assets\Unity UI Samples\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\CameraSwitch.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\AddOns\MgLEGO Danger Zone\Danger Zone Readme.txt" />
      <None Include="Assets\EasyPolyMap\Demos\OtherDemoData\Circle_Island_Data.txt" />
