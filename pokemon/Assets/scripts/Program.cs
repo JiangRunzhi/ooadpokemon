@@ -42,6 +42,7 @@ public class Program : MonoBehaviour
         recordBattle.bloodLeft = recordProperty.blood[recordBattle.nowLeft];
         recordBattle.defenseLeft = recordProperty.defense[recordBattle.nowLeft];
         recordBattle.speedLeft = recordProperty.speed[recordBattle.nowLeft];
+        bloodControl.newLeftBloodRoll(recordBattle.bloodLeft);
     }
     
     public static void iniPropertyRight()
@@ -50,6 +51,7 @@ public class Program : MonoBehaviour
         recordBattle.bloodRight = recordProperty.blood[recordBattle.nowRight];
         recordBattle.defenseRight = recordProperty.defense[recordBattle.nowRight];
         recordBattle.speedRight = recordProperty.speed[recordBattle.nowRight];
+        bloodControl.newRightBloodRoll(recordBattle.bloodRight);
     }
     public static void elfChoose(int[] choice)//这个是放入精灵的方法，choice的size是6，前三个是左边的精灵，后三个是右边的精灵，按照顺序塞入
                                                 //0 妙蛙种子 1 小火龙  2杰尼龟  3 比比鸟  4 皮卡丘  5 臭臭泥
@@ -77,6 +79,7 @@ public class Program : MonoBehaviour
                 recordBattle.bloodRight - recordBattle.attackLeft + recordBattle.defenseRight;
             Debug.Log("左边使用了技能1\n");
             //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
+            bloodControl.damageRight(recordBattle.attackLeft - recordBattle.defenseRight);
             //调用刘仝技能0传入精灵参数，调用刘仝闪避传入精灵参数
         }
     }
@@ -96,6 +99,7 @@ public class Program : MonoBehaviour
             recordBattle.bloodRight = recordBattle.bloodRight - recordBattle.attackLeft * 2 + recordBattle.defenseRight;
             Debug.Log("左边使用了技能2\n");
             //调用小兄弟，传入扣血值(recordBattle.attackLeft * 2 - recordBattle.defenseRight)
+            bloodControl.damageRight(recordBattle.attackLeft * 2 - recordBattle.defenseRight);
             //调用刘仝技能1传入精灵参数
         }
     }
@@ -150,6 +154,7 @@ public class Program : MonoBehaviour
                 recordBattle.bloodLeft - recordBattle.attackRight + recordBattle.defenseLeft;
             Debug.Log("右边使用了技能1\n");
             //调用小兄弟，传入扣血值(recordBattle.attackRight - recordBattle.defenseLeft)
+            bloodControl.damageLeft(recordBattle.attackRight - recordBattle.defenseLeft);
             //调用刘仝技能4传入精灵参数
         }
     }
@@ -170,6 +175,7 @@ public class Program : MonoBehaviour
                 recordBattle.bloodLeft - recordBattle.attackRight * 2 + recordBattle.defenseLeft;
             Debug.Log("右边使用了技能2\n");
             //调用小兄弟，传入扣血值(recordBattle.attackRight * 2 - recordBattle.defenseLeft)
+            bloodControl.damageLeft(recordBattle.attackRight * 2 - recordBattle.defenseLeft);
             //调用刘仝技能5传入精灵参数
         }
     }

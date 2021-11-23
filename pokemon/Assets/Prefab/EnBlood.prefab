@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 210, y: 190}
-  m_SizeDelta: {x: -480, y: -420}
+  m_AnchoredPosition: {x: 210, y: 182.5}
+  m_SizeDelta: {x: -480, y: -405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167531628691791822
 MonoBehaviour:
@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodBar: {fileID: 1167531628691791822}
-  damage: 1
+  damage: 0
+  hpHolder: 0
 --- !u!1 &1167531628895626278
 GameObject:
   m_ObjectHideFlags: 0

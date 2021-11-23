@@ -8,14 +8,14 @@ public class EnBloodBar : MonoBehaviour
     private float targetBlood = 1.0f;
     public Slider bloodBar;
 
-    public int damage = 1;
-    private int hpHolder = 2000;
+    public int damage;
+    public int hpHolder;
     private int hp;
 
     private void Start()
     {
         hp = hpHolder;
-        bloodBar.value = 1000;
+        bloodBar.value = hpHolder;
         //初始化
         //绑定按钮点击事件
         //buttonAdd->addBlood
@@ -37,6 +37,7 @@ public class EnBloodBar : MonoBehaviour
         if(hp<0) return;
         hp-=damage;
         bloodBar.value = (float)hp/hpHolder;//通过改变value的值（float类型）来改变血条长度。
+        damage = 0;
         if(hp<=0)
         {
             Destroy(this.gameObject);
