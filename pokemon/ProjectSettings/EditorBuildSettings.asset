@@ -24,6 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/handbook.unity
     guid: 268c44248409d064589449235d11e9af
   - enabled: 1
-    path: Assets/Scenes/pikachu.unity
+    path: Assets/Scenes/handbooks/pikachu.unity
     guid: 8369c42afa2304944b8ddea9bfcd5f2a
+  - enabled: 1
+    path: Assets/Scenes/handbooks/charmander.unity
+    guid: 18e11487549ec7842b11ef983c14fb9d
+  - enabled: 1
+    path: Assets/Scenes/handbooks/squirtle.unity
+    guid: ab7491d5d7340f441914c273d0649c62
+  - enabled: 1
+    path: Assets/Scenes/handbooks/bulbasaur.unity
+    guid: 48c739be7e55a1742a51ebb92373e198
+  - enabled: 1
+    path: Assets/Scenes/handbooks/pidgeotto.unity
+    guid: 38f0cfea41e415f4f9a8619cba44da36
+  - enabled: 1
+    path: Assets/Scenes/handbooks/muk.unity
+    guid: 6eb2cd59ffb413742839451e8f0160ca
   m_configObjects: {}

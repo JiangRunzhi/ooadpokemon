@@ -37,27 +37,27 @@ public class HbPokemon : MonoBehaviour
 
     void OnCharmanderClick()
     {
-        charmanderBtn.image.color = Color.grey;
+        SceneManager.LoadScene(7);
     }
      
     void OnSquirtleClick()
     {
-        squirtleBtn.image.color = Color.grey;
+        SceneManager.LoadScene(8);
     }
      
     void OnBulbasaurClick()
     {
-        bulbasaurBtn.image.color = Color.grey;
+        SceneManager.LoadScene(9);
     }
      
     void OnMukClick()
     {
-        mukBtn.image.color = Color.grey;
+        SceneManager.LoadScene(11);
     }
      
     void OnPidgeottoClick()
     {
-        pidgeottoBtn.image.color = Color.grey;
+        SceneManager.LoadScene(10);
     }
 
 }
