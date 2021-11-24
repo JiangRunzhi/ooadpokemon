@@ -11,6 +11,7 @@ public class DataBase : MonoBehaviour
     public GameObject go;
     public GameObject ac;
     public GameObject mc;
+    public GameObject bp;
     public int[] blood = {15, 15, 15, 15, 15, 20};
     public int[] defense = {3, 3, 4, 3, 3, 3};
     public int[] attack = {6, 8, 6, 6, 8, 10};
@@ -28,6 +29,8 @@ public class DataBase : MonoBehaviour
         Set1();
         ac.GetComponent<AppearController>().Set(Translate(player1List[number1], 1), true);
         ac.GetComponent<AppearAnimation>().Set(Translate(player1List[number1], 1));
+        bp.GetComponent<BloodPrefab>().hpLeft = pokemon1.hp;
+        bp.GetComponent<BloodPrefab>().newBloodRollLeft = true;
     }
 
     public void Appear2()
@@ -35,6 +38,8 @@ public class DataBase : MonoBehaviour
         Set2();
         ac.GetComponent<AppearController>().Set(Translate(player2List[number2], 2), true);
         ac.GetComponent<AppearAnimation>().Set(Translate(player2List[number2], 2));
+        bp.GetComponent<BloodPrefab>().hpRight = pokemon2.hp;
+        bp.GetComponent<BloodPrefab>().newBloodRollRight = true;
     }
 
     public void Disappear1()
@@ -87,6 +92,8 @@ public class DataBase : MonoBehaviour
                 pokemon2.hp = pokemon2.hp - pokemon1.attack + pokemon2.defense;
                 Debug.Log("左边使用了技能1\n");
                 isdie = pokemon2.hp <= 0 ? true : false;
+                GameObject right = GameObject.Find("EnBlood(Clone)");
+                right.GetComponent<EnBloodBar>().damage = (pokemon1.attack - pokemon2.defense);
                 //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
             ac.GetComponent<HitAnimation>().Set(Translate(pokemon1.type,1),Translate(pokemon2.type,2),true,ismiss,isdie);
@@ -106,6 +113,8 @@ public class DataBase : MonoBehaviour
             {
                 pokemon1.hp = pokemon1.hp - pokemon2.attack + pokemon1.defense;
                 Debug.Log("右边使用了技能1\n");
+                GameObject left = GameObject.Find("MyBlood(Clone)");
+                left.GetComponent<MyBloodBar>().damage = (pokemon2.attack - pokemon1.defense);
                 isdie = pokemon1.hp <= 0 ? true : false;
                 //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
@@ -132,6 +141,8 @@ public class DataBase : MonoBehaviour
             {
                 pokemon2.hp = pokemon2.hp - pokemon1.attack * 2 + pokemon2.defense;
                 Debug.Log("左边使用了技能2\n");
+                GameObject right = GameObject.Find("EnBlood(Clone)");
+                right.GetComponent<EnBloodBar>().damage = (pokemon1.attack * 2 - pokemon2.defense);
                 isdie = pokemon2.hp <= 0 ? true : false;
                 //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
@@ -152,6 +163,8 @@ public class DataBase : MonoBehaviour
             {
                 pokemon1.hp = pokemon1.hp - pokemon2.attack * 2 + pokemon1.defense;
                 Debug.Log("右边使用了技能2\n");
+                GameObject left = GameObject.Find("MyBlood(Clone)");
+                left.GetComponent<MyBloodBar>().damage = (pokemon2.attack * 2 - pokemon1.defense);
                 isdie = pokemon1.hp <= 0 ? true : false;
                 //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
