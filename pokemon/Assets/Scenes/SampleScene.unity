@@ -268,7 +268,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2290486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23b0a19489ad46ca91a76a611cd81d0f, type: 3}
   m_Name: 
@@ -2997,7 +2997,8 @@ MonoBehaviour:
   pokemon2: {fileID: 0}
   animator1: {fileID: 0}
   animator2: {fileID: 0}
-  judge: 0
+  judge1: 0
+  judge2: 0
   leftHitRight: 0
   dodge: 0
   dead: 0

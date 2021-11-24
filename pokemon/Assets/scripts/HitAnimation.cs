@@ -117,10 +117,25 @@ public class HitAnimation : MonoBehaviour
         }
         else
         {
-            judge1 = true;
             animator1.SetBool("move", false);
-            judge1 = true;
+            if (dead)
+            {
+                Invoke("die",6f);
+            }
             enabled = false;
+        }
+    }
+    
+    public void die()
+    {
+        GameObject go = GameObject.Find("Window");
+        if (leftHitRight)
+        {
+            go.GetComponent<DataBase>().Disappear2();
+        }
+        else
+        {
+            go.GetComponent<DataBase>().Disappear1();
         }
     }
 
@@ -128,6 +143,7 @@ public class HitAnimation : MonoBehaviour
     {
         pokemon1 = GameObject.Find(name1);
         pokemon2 = GameObject.Find(name2);
+        judge1 = true;
         leftHitRight = dir;
         dodge = miss;
         dead = death;

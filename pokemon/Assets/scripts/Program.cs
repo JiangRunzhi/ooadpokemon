@@ -284,25 +284,18 @@ public class Program : MonoBehaviour
         {
             case 0:
                 return "seed" + number;
-                break;
             case 1:
                 return "dragon" + number;
-                break;
             case 2:
                 return "turtle" + number;
-                break;
             case 3:
                 return "bird" + number;
-                break;
             case 4:
                 return "mouse" + number;
-                break;
             case 5:
                 return "mud" + number;
-                break;
             default:
                 return "seed" + number;
-                break;
         }
     }
 }

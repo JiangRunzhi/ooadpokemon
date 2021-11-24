@@ -8,13 +8,13 @@ public class ButtonMethod : MonoBehaviour
 
     public void InitialAppear()
     {
-        go.GetComponent<DataBase>().Appear(1,0);
-        Invoke("SecondAppear",10f);
+        go.GetComponent<DataBase>().Appear1();
+        Invoke("SecondAppear",8f);
     }
 
     public void SecondAppear()
     {
-        go.GetComponent<DataBase>().Appear(2,0);
+        go.GetComponent<DataBase>().Appear2();
     }
 
     public void Hit()

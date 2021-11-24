@@ -11,7 +11,8 @@ public class SpecialAnimation : MonoBehaviour
     public GameObject pokemon2;
     public Animator animator1;
     public Animator animator2;
-    public bool judge;
+    public bool judge1;
+    public bool judge2;
     public bool leftHitRight;
     public bool dodge;
     public bool dead;
@@ -48,20 +49,32 @@ public class SpecialAnimation : MonoBehaviour
         }
         animator1 = pokemon1.GetComponent<Animator>();
         animator2 = pokemon2.GetComponent<Animator>();
-        if (judge)
+        if (judge1)
         {
             animator1.SetTrigger("special");
-            judge = false;
-        }
-        Invoke("hurt",1f);
-        if (pokemon2.transform.position != p2)
-        {
-            pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
+            judge1 = false;
+            Invoke("hurt",1f);
         }
         else
         {
-            judge = true;
-            enabled = false;
+            if (judge2 && pokemon2.transform.position != p2)
+            {
+                animator2.SetBool("move",true);
+                pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
+            }
+            else if (judge2)
+            {
+                animator2.SetBool("move",false);
+                judge2 = false;
+            }
+            else
+            {
+                if (dead)
+                {
+                    Invoke("die",6f);
+                }
+                enabled = false;
+            }
         }
     }
     
@@ -82,10 +95,25 @@ public class SpecialAnimation : MonoBehaviour
         }
     }
 
+    public void die()
+    {
+        GameObject go = GameObject.Find("Window");
+        if (leftHitRight)
+        {
+            go.GetComponent<DataBase>().Disappear2();
+        }
+        else
+        {
+            go.GetComponent<DataBase>().Disappear1();
+        }
+    }
+
     public void Set(string name1, string name2,bool dir,bool miss,bool death)
     {
         pokemon1 = GameObject.Find(name1);
         pokemon2 = GameObject.Find(name2);
+        judge1 = true;
+        judge2 = true;
         leftHitRight = dir;
         dodge = miss;
         dead = death;

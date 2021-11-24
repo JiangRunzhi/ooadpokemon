@@ -15,80 +15,76 @@ public class DataBase : MonoBehaviour
     public int[] defense = {3, 3, 4, 3, 3, 3};
     public int[] attack = {6, 8, 6, 6, 8, 10};
     public int[] speed = {3, 4, 3, 4, 6, 3};
-    public int[] player1List = {0,1,2};
-    public int[] player2List = {3,4,5};
+    public int[] player1List = {0, 1, 2};
+    public int[] player2List = {3, 4, 5};
     public int number1 = 0;
     public int number2 = 0;
     public Pokemon pokemon1;
     public Pokemon pokemon2;
     public int currentPlayer = 1;
-    
-    public void Appear(int player,int number)
+
+    public void Appear1()
     {
-        if (player == 1)
+        Set1();
+        ac.GetComponent<AppearController>().Set(Translate(player1List[number1], 1), true);
+        mc.GetComponent<CameraSwitch>().Set(Translate(player1List[number1], 1));
+        mc.GetComponent<CameraSwitch>().enabled = true;
+        ac.GetComponent<AppearAnimation>().Set(Translate(player1List[number1], 1));
+        ac.GetComponent<AppearAnimation>().enabled = true;
+    }
+
+    public void Appear2()
+    {
+        Set2();
+        ac.GetComponent<AppearController>().Set(Translate(player2List[number2], 2), true);
+        mc.GetComponent<CameraSwitch>().Set(Translate(player2List[number2], 2));
+        mc.GetComponent<CameraSwitch>().enabled = true;
+        ac.GetComponent<AppearAnimation>().Set(Translate(player2List[number2], 2));
+        ac.GetComponent<AppearAnimation>().enabled = true;
+    }
+
+    public void Disappear1()
+    {
+        ac.GetComponent<AppearController>().Set(Translate(player1List[number1],1),false);
+        number1 ++;
+        if (number1 >= 3)
         {
-            Set1();
-            ac.GetComponent<AppearController>().Set(Translate(player1List[number],1),true);
-            mc.GetComponent<CameraSwitch>().Set(Translate(player1List[number],1));
-            mc.GetComponent<CameraSwitch>().enabled = true;
-            ac.GetComponent<AppearAnimation>().Set(Translate(player1List[number],1));
-            ac.GetComponent<AppearAnimation>().enabled = true;
+            Invoke("Stay",3f);
+            lose();
+            enabled = false;
         }
         else
         {
-            Set2();
-            ac.GetComponent<AppearController>().Set(Translate(player2List[number],2),true);
-            mc.GetComponent<CameraSwitch>().Set(Translate(player2List[number],2));
-            mc.GetComponent<CameraSwitch>().enabled = true;
-            ac.GetComponent<AppearAnimation>().Set(Translate(player2List[number],2));
-            ac.GetComponent<AppearAnimation>().enabled = true;
+            Invoke("Stay",3f);
+            Appear1();
         }
     }
 
-    public void Disappear(int player)
+    public void Disappear2()
     {
-        if (player == 1)
+        ac.GetComponent<AppearController>().Set(Translate(player2List[number2],2),false);
+        number2++;
+        if (number2 >= 3)
         {
-            ac.GetComponent<AppearController>().Set(Translate(player1List[number1],1),false);
-            number1++;
-            if (number1 >= 3)
-            {
-                Invoke("Stay",3f);
-                lose();
-                enabled = false;
-            }
-            else
-            {
-                Invoke("Stay",3f);
-                Appear(1,number1);
-            }
+            Invoke("Stay",3f);
+            win();
+            enabled = false;
         }
         else
         {
-            ac.GetComponent<AppearController>().Set(Translate(player2List[number2],2),false);
-            number2++;
-            if (number2 >= 3)
-            {
-                Invoke("Stay",3f);
-                win();
-                enabled = false;
-            }
-            else
-            {
-                Invoke("Stay",3f);
-                Appear(2,number2);
-            }
+            Invoke("Stay",3f);
+            Appear2();
         }
     }
 
     public void Hit()
     {
         System.Random rd1 = new System.Random();
+        bool isdie = false;
         if (currentPlayer == 1)
         {
             int elude1 = rd1.Next(0, 10 - pokemon2.speed);
             bool ismiss = elude1 == 0 ? true : false;
-            bool isdie = false;
             if (ismiss)
             {
                 Debug.Log("左边使用了技能1，右边成功躲避\n");
@@ -101,22 +97,14 @@ public class DataBase : MonoBehaviour
                 isdie = pokemon2.hp <= 0 ? true : false;
                 //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
-            Debug.Log(Translate(pokemon1.type,1));
-            Debug.Log(Translate(pokemon2.type,2));
             ac.GetComponent<HitAnimation>().Set(Translate(pokemon1.type,1),Translate(pokemon2.type,2),true,ismiss,isdie);
             ac.GetComponent<HitAnimation>().enabled = true;
             currentPlayer = 2;
-            if (isdie)
-            {
-                Invoke("Stay",3f);
-                Disappear(2);
-            }
         }
         else
         {
             int elude1 = rd1.Next(0, 10 - pokemon1.speed);
             bool ismiss = elude1 == 0 ? true : false;
-            bool isdie = false;
             if (ismiss)
             {
                 Debug.Log("右边使用了技能1，左边成功躲避\n");
@@ -132,22 +120,17 @@ public class DataBase : MonoBehaviour
             ac.GetComponent<HitAnimation>().Set(Translate(pokemon2.type,2),Translate(pokemon1.type,1),false,ismiss,isdie);
             ac.GetComponent<HitAnimation>().enabled = true;
             currentPlayer = 1;
-            if (isdie)
-            {
-                Invoke("Stay",3f);
-                Disappear(1);
-            }
         }
     }
 
     public void Special()
     {
         System.Random rd1 = new System.Random();
+        bool isdie = false;
         if (currentPlayer == 1)
         {
             int elude1 = rd1.Next(0, 10 - pokemon2.speed);
             bool ismiss = elude1 == 0 ? true : false;
-            bool isdie = false;
             if (ismiss)
             {
                 Debug.Log("左边使用了技能2，右边成功躲避\n");
@@ -163,17 +146,11 @@ public class DataBase : MonoBehaviour
             ac.GetComponent<SpecialAnimation>().Set(Translate(pokemon1.type,1),Translate(pokemon2.type,2),true,ismiss,isdie);
             ac.GetComponent<SpecialAnimation>().enabled = true;
             currentPlayer = 2;
-            if (isdie)
-            {
-                Invoke("Stay",5f);
-                Disappear(2);
-            }
         }
         else
         {
             int elude1 = rd1.Next(0, 10 - pokemon1.speed);
             bool ismiss = elude1 == 0 ? true : false;
-            bool isdie = false;
             if (ismiss)
             {
                 Debug.Log("右边使用了技能2，左边成功躲避\n");
@@ -189,11 +166,6 @@ public class DataBase : MonoBehaviour
             ac.GetComponent<SpecialAnimation>().Set(Translate(pokemon2.type,2),Translate(pokemon1.type,1),false,ismiss,isdie);
             ac.GetComponent<SpecialAnimation>().enabled = true;
             currentPlayer = 1;
-            if (isdie)
-            {
-                Invoke("Stay",3f);
-                Disappear(1);
-            }
         }
     }
 
@@ -299,38 +271,23 @@ public class DataBase : MonoBehaviour
         {
             case 0:
                 return "seed" + number;
-                break;
             case 1:
                 return "dragon" + number;
-                break;
             case 2:
                 return "turtle" + number;
-                break;
             case 3:
                 return "bird" + number;
-                break;
             case 4:
                 return "mouse" + number;
-                break;
             case 5:
                 return "mud" + number;
-                break;
             default:
                 return "seed" + number;
-                break;
         }
     }
 
     public void Stay()
     {
-        if (go.GetComponent<Stay>().enabled)
-        {
-            go.GetComponent<Stay>().enabled = false;
-        }
-        else
-        {
-            go.GetComponent<Stay>().enabled = true;
-        }
-        
+        Debug.Log("死了啦，都你害的啦，拜托");
     }
 }
