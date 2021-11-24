@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,8 +64,14 @@ public class ChoosePokemon : MonoBehaviour
                 }
             }
         }
+        using (StreamWriter sw = new StreamWriter("names.txt"))
+        {
+            foreach (int s in selectedPokemons)
+            {
+                sw.WriteLine(s);
+            }
+        }
         SceneManager.LoadScene(1);
-        Program.dataControl(selectedPokemons);
     }
 
     void OnPikachuClick() // 4.皮卡丘

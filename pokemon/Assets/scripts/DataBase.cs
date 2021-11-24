@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.IO;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,8 +15,8 @@ public class DataBase : MonoBehaviour
     public int[] defense = {3, 3, 4, 3, 3, 3};
     public int[] attack = {6, 8, 6, 6, 8, 10};
     public int[] speed = {3, 4, 3, 4, 6, 3};
-    public int[] player1List = {0, 1, 2};
-    public int[] player2List = {3, 4, 5};
+    public int[] player1List = new int[3];
+    public int[] player2List = new int[3];
     public int number1 = 0;
     public int number2 = 0;
     public Pokemon pokemon1;
@@ -289,5 +289,27 @@ public class DataBase : MonoBehaviour
     public void Stay()
     {
         Debug.Log("死了啦，都你害的啦，拜托");
+    }
+
+    public void Read()
+    {
+        int count = 0;
+        string line = "";
+        using (StreamReader sr = new StreamReader("names.txt"))
+        {
+            while ((line = sr.ReadLine()) != null)
+            {
+                if (count < 3)
+                {
+                    player1List[count] = int.Parse(line);
+                    count++;
+                }
+                else
+                {
+                    player2List[count - 3] = int.Parse(line);
+                    count++;
+                }
+            }
+        }
     }
 }

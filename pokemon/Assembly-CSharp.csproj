@@ -60,7 +60,6 @@
      <Compile Include="Assets\scripts\Audio\main_sound.cs" />
      <Compile Include="Assets\scripts\recordProperty.cs" />
      <Compile Include="Assets\scripts\Program.cs" />
-     <Compile Include="Assets\scripts\DataControler.cs" />
      <Compile Include="Assets\scripts\Audio\sound_scan.cs" />
      <Compile Include="Assets\scripts\MainUI_scripts\MyBloodBar.cs" />
      <Compile Include="Assets\Unity UI Samples\Scripts\DragMe.cs" />
