@@ -8,8 +8,9 @@ public class ButtonMethod : MonoBehaviour
 
     public void InitialAppear()
     {
-        go.GetComponent<DataBase>().Read();
         go.GetComponent<DataBase>().Appear1();
+        go.GetComponent<DataBase>().number1 = 0;
+        go.GetComponent<DataBase>().number2 = 0;
         Invoke("SecondAppear",8f);
     }
 

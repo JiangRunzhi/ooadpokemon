@@ -12,7 +12,6 @@ public class SpecialAnimation : MonoBehaviour
     public Animator animator1;
     public Animator animator2;
     public bool judge1;
-    public bool judge2;
     public bool leftHitRight;
     public bool dodge;
     public bool dead;
@@ -57,15 +56,9 @@ public class SpecialAnimation : MonoBehaviour
         }
         else
         {
-            if (judge2 && pokemon2.transform.position != p2)
+            if (pokemon2.transform.position != p2)
             {
-                animator2.SetBool("move",true);
-                pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
-            }
-            else if (judge2)
-            {
-                animator2.SetBool("move",false);
-                judge2 = false;
+                Invoke("run",0f);
             }
             else
             {
@@ -95,16 +88,32 @@ public class SpecialAnimation : MonoBehaviour
         }
     }
 
-    public void die()
+    public void run()
     {
-        GameObject go = GameObject.Find("Window");
-        if (leftHitRight)
+        if (pokemon2.transform.position != p2)
         {
-            go.GetComponent<DataBase>().Disappear2();
+            animator2.SetBool("move",true);
+            pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
         }
         else
         {
-            go.GetComponent<DataBase>().Disappear1();
+            animator2.SetBool("move",false);
+        }
+    }
+
+    public void die()
+    {
+        if (dead)
+        {
+            GameObject go = GameObject.Find("Window");
+            if (leftHitRight)
+            {
+                go.GetComponent<DataBase>().Disappear2();
+            }
+            else
+            {
+                go.GetComponent<DataBase>().Disappear1();
+            }
         }
     }
 
@@ -113,7 +122,6 @@ public class SpecialAnimation : MonoBehaviour
         pokemon1 = GameObject.Find(name1);
         pokemon2 = GameObject.Find(name2);
         judge1 = true;
-        judge2 = true;
         leftHitRight = dir;
         dodge = miss;
         dead = death;

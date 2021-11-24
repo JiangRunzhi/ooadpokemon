@@ -62,9 +62,18 @@ public class HitAnimation : MonoBehaviour
             Invoke("hurt",0.3f);
             judge1 = false;
         }
-        else
+        else if (pokemon1.transform.position != p2)
         {
             Invoke("run",1.0f);
+            
+        }
+        else
+        {
+            if (dead)
+            {
+                Invoke("die",6f);
+            }
+            enabled = false;
         }
     }
     
@@ -118,11 +127,6 @@ public class HitAnimation : MonoBehaviour
         else
         {
             animator1.SetBool("move", false);
-            if (dead)
-            {
-                Invoke("die",6f);
-            }
-            enabled = false;
         }
     }
     
@@ -137,6 +141,7 @@ public class HitAnimation : MonoBehaviour
         {
             go.GetComponent<DataBase>().Disappear1();
         }
+        enabled = false;
     }
 
     public void Set(string name1, string name2,bool dir,bool miss,bool death)

@@ -15,8 +15,8 @@ public class DataBase : MonoBehaviour
     public int[] defense = {3, 3, 4, 3, 3, 3};
     public int[] attack = {6, 8, 6, 6, 8, 10};
     public int[] speed = {3, 4, 3, 4, 6, 3};
-    public int[] player1List = new int[3];
-    public int[] player2List = new int[3];
+    public int[] player1List = {1,2,3};
+    public int[] player2List = {0,1,4};
     public int number1 = 0;
     public int number2 = 0;
     public Pokemon pokemon1;
@@ -27,35 +27,28 @@ public class DataBase : MonoBehaviour
     {
         Set1();
         ac.GetComponent<AppearController>().Set(Translate(player1List[number1], 1), true);
-        mc.GetComponent<CameraSwitch>().Set(Translate(player1List[number1], 1));
-        mc.GetComponent<CameraSwitch>().enabled = true;
         ac.GetComponent<AppearAnimation>().Set(Translate(player1List[number1], 1));
-        ac.GetComponent<AppearAnimation>().enabled = true;
     }
 
     public void Appear2()
     {
         Set2();
         ac.GetComponent<AppearController>().Set(Translate(player2List[number2], 2), true);
-        mc.GetComponent<CameraSwitch>().Set(Translate(player2List[number2], 2));
-        mc.GetComponent<CameraSwitch>().enabled = true;
         ac.GetComponent<AppearAnimation>().Set(Translate(player2List[number2], 2));
-        ac.GetComponent<AppearAnimation>().enabled = true;
     }
 
     public void Disappear1()
     {
         ac.GetComponent<AppearController>().Set(Translate(player1List[number1],1),false);
         number1 ++;
+        Debug.Log(number1);
         if (number1 >= 3)
         {
-            Invoke("Stay",3f);
             lose();
             enabled = false;
         }
         else
         {
-            Invoke("Stay",3f);
             Appear1();
         }
     }
@@ -63,16 +56,15 @@ public class DataBase : MonoBehaviour
     public void Disappear2()
     {
         ac.GetComponent<AppearController>().Set(Translate(player2List[number2],2),false);
-        number2++;
+        number2 ++;
+        Debug.Log(number2);
         if (number2 >= 3)
         {
-            Invoke("Stay",3f);
             win();
             enabled = false;
         }
         else
         {
-            Invoke("Stay",3f);
             Appear2();
         }
     }
@@ -284,11 +276,6 @@ public class DataBase : MonoBehaviour
             default:
                 return "seed" + number;
         }
-    }
-
-    public void Stay()
-    {
-        Debug.Log("死了啦，都你害的啦，拜托");
     }
 
     public void Read()

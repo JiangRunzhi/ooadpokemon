@@ -59,6 +59,7 @@ public class ChoosePokemon : MonoBehaviour
                     if (!sel.Contains(j))
                     {
                         selectedPokemons[i] = j;
+                        sel.Add(j);
                         break;
                     }
                 }
