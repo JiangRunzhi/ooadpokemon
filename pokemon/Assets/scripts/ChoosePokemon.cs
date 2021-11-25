@@ -14,7 +14,10 @@ public class ChoosePokemon : MonoBehaviour
     public static int[] selectedPokemons = new int[6];
     public HashSet<int> sel = new HashSet<int>();
     
+
+    
     void Start () {
+        
         for (int i = 0; i < 6; i++)
         {
             selectedPokemons[i] = -1;

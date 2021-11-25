@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,7 +10,12 @@ using UnityEngine.SceneManagement;
 public class DataBase : MonoBehaviour
 {
     //妙 火 杰 比 皮 臭
-    //0 1 2 3 4 5
+    //0  1  2 3  4 5
+    //草 火 水 飞 电 毒
+
+    //克制prior 前克制后“前后”
+    public static HashSet<String> prior = new HashSet<String>();
+    public bool prior_flag = true;
     public GameObject go;
     public GameObject ac;
     public GameObject mc;
@@ -126,6 +134,18 @@ public class DataBase : MonoBehaviour
 
     public void Special()
     {
+        if (prior_flag)
+        {
+            prior.Add("10"); //火草
+            prior.Add("30"); //飞草
+            prior.Add("43"); //电飞
+            prior.Add("21"); //水火
+            prior.Add("02"); //草水
+            prior.Add("42"); //电水
+            prior_flag = false;
+        }
+
+
         System.Random rd1 = new System.Random();
         bool isdie = false;
         if (currentPlayer == 1)
@@ -135,16 +155,25 @@ public class DataBase : MonoBehaviour
             if (ismiss)
             {
                 Debug.Log("左边使用了技能2，右边成功躲避\n");
-                //调用小兄弟，传入扣血值0
             }
             else
             {
-                pokemon2.hp = pokemon2.hp - pokemon1.attack * 2 + pokemon2.defense;
-                Debug.Log("左边使用了技能2\n");
+                int hurt_num = 0;
+                hurt_num = pokemon1.attack - pokemon2.defense;
+                String prior_term = pokemon1.type+ "" + pokemon2.type;
+                if (prior.Contains(prior_term))
+                {
+                    hurt_num *= 2;
+                    Debug.Log("左边使用了技能2,效果拔群！\n");
+                }
+                else
+                {
+                    Debug.Log("左边使用了技能2\n");
+                }
+                pokemon2.hp = pokemon2.hp - hurt_num;
                 GameObject right = GameObject.Find("EnBlood(Clone)");
-                right.GetComponent<EnBloodBar>().damage = (pokemon1.attack * 2 - pokemon2.defense);
+                right.GetComponent<EnBloodBar>().damage = hurt_num;
                 isdie = pokemon2.hp <= 0 ? true : false;
-                //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
             ac.GetComponent<SpecialAnimation>().Set(Translate(pokemon1.type,1),Translate(pokemon2.type,2),true,ismiss,isdie);
             ac.GetComponent<SpecialAnimation>().enabled = true;
@@ -157,14 +186,24 @@ public class DataBase : MonoBehaviour
             if (ismiss)
             {
                 Debug.Log("右边使用了技能2，左边成功躲避\n");
-                //调用小兄弟，传入扣血值0
             }
             else
             {
-                pokemon1.hp = pokemon1.hp - pokemon2.attack * 2 + pokemon1.defense;
-                Debug.Log("右边使用了技能2\n");
+                int hurt_num = 0;
+                hurt_num = pokemon2.attack - pokemon1.defense;
+                String prior_term = pokemon2.type+ "" + pokemon1.type;
+                if (prior.Contains(prior_term))
+                {
+                    hurt_num *= 2;
+                    Debug.Log("右边使用了技能2,效果拔群！\n");
+                }
+                else
+                {
+                    Debug.Log("右边使用了技能2\n");
+                }
+                pokemon1.hp = pokemon1.hp - hurt_num;
                 GameObject left = GameObject.Find("MyBlood(Clone)");
-                left.GetComponent<MyBloodBar>().damage = (pokemon2.attack * 2 - pokemon1.defense);
+                left.GetComponent<MyBloodBar>().damage = hurt_num;
                 isdie = pokemon1.hp <= 0 ? true : false;
                 //调用小兄弟，传入扣血值(recordBattle.attackLeft - recordBattle.defenseRight)
             }
@@ -178,7 +217,7 @@ public class DataBase : MonoBehaviour
     {
         if (currentPlayer == 1)
         {
-            pokemon1.attack++;
+            pokemon1.attack+=2;
             pokemon1.defense++;
             if (pokemon1.speed < 9)
             {
@@ -191,7 +230,7 @@ public class DataBase : MonoBehaviour
         }
         else
         {
-            pokemon2.attack++;
+            pokemon2.attack+=2;
             pokemon2.defense++;
             if (pokemon2.speed < 9)
             {
@@ -209,7 +248,7 @@ public class DataBase : MonoBehaviour
         {
             if (pokemon2.attack > 1)
             {
-                pokemon2.attack--;
+                pokemon2.attack-=2;
             }
 
             if (pokemon2.defense > 0)
@@ -230,7 +269,7 @@ public class DataBase : MonoBehaviour
         {
             if (pokemon1.attack > 1)
             {
-                pokemon1.attack--;
+                pokemon1.attack-=2;
             }
 
             if (pokemon1.defense > 0)
