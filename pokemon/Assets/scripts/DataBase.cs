@@ -50,9 +50,18 @@ public class DataBase : MonoBehaviour
 
     public GameObject CombatInfoLable;
 
+    public GameObject LeftInfo;
+    public GameObject RightInfo;
+
     public void Appear1()
     {
-        
+        using (StreamReader sr = new StreamReader("currentPlayer.txt"))
+        {
+            LeftInfo.GetComponent<Text>().text = sr.ReadLine();
+            RightInfo.GetComponent<Text>().text = LeftInfo.GetComponent<Text>().text + "的对手";
+            LeftInfo.SetActive(true);
+            RightInfo.SetActive(true);
+        }
         Set1();
         ac.GetComponent<AppearController>().Set(Translate(player1List[number1], 1), true);
         mc.GetComponent<CameraSwitch>().Set(Translate(player1List[number1],1));

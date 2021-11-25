@@ -41,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/handbooks/muk.unity
     guid: 6eb2cd59ffb413742839451e8f0160ca
+  - enabled: 1
+    path: Assets/Scenes/signup.unity
+    guid: c1c5de401322db04d9bba73825f365ef
+  - enabled: 1
+    path: Assets/Scenes/signin.unity
+    guid: 5a23df9a303da3844a91facd0f9f5c06
+  - enabled: 1
+    path: Assets/Scenes/ModeChoose.unity
+    guid: 854a59921efaa084186ff0fbf095121d
   m_configObjects: {}

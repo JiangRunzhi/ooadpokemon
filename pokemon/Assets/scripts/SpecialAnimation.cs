@@ -12,27 +12,14 @@ public class SpecialAnimation : MonoBehaviour
     public Animator animator1;
     public Animator animator2;
     public bool judge1;
+    public bool judge2;
     public bool leftHitRight;
     public bool dodge;
     public bool dead;
     public Vector3 p1;
     public Vector3 p2;
-    void Start()
-    {
-        animator1 = pokemon1.GetComponent<Animator>();
-        animator2 = pokemon2.GetComponent<Animator>();
-        if (leftHitRight)
-        {
-            p1 = new Vector3(14, 0, 5);
-            p2 = new Vector3(10, 0, 5);
-        }
-        else
-        {
-            p1 = new Vector3(-14, 0, 5);
-            p2 = new Vector3(-10, 0, 5);
-        }
-    }
-
+    public Vector3 p3;
+ 
     // Update is called once per frame
     void Update()
     {
@@ -44,19 +31,30 @@ public class SpecialAnimation : MonoBehaviour
         }
         else
         {
-            if (pokemon2.transform.position != p2)
+            if (dodge && pokemon2.transform.position != p3 && judge2)
             {
-                animator2.SetBool("move",true);
-                pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
+                pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p3, Time.deltaTime * 10);
+            }
+            else if (judge2)
+            {
+                judge2 = false;
             }
             else
             {
-                animator2.SetBool("move",false);
-                if (dead)
+                if (pokemon2.transform.position != p2)
                 {
-                    Invoke("die",6f);
+                    animator2.SetBool("move",true);
+                    Invoke("run",0.5f);
                 }
-                enabled = false;
+                else
+                {
+                    animator2.SetBool("move",false);
+                    if (dead)
+                    {
+                        Invoke("die",6f);
+                    }
+                    enabled = false;
+                }
             }
         }
     }
@@ -80,7 +78,7 @@ public class SpecialAnimation : MonoBehaviour
 
     public void run()
     {
-        
+        pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
     }
 
     public void die()
@@ -104,6 +102,7 @@ public class SpecialAnimation : MonoBehaviour
         pokemon1 = GameObject.Find(name1);
         pokemon2 = GameObject.Find(name2);
         judge1 = true;
+        judge2 = true;
         leftHitRight = dir;
         dodge = miss;
         dead = death;
@@ -113,11 +112,13 @@ public class SpecialAnimation : MonoBehaviour
         {
             p1 = new Vector3(14, 0, 5);
             p2 = new Vector3(10, 0, 5);
+            p3 = new Vector3(14.1f, 0, 5);
         }
         else
         {
             p1 = new Vector3(-14, 0, 5);
             p2 = new Vector3(-10, 0, 5);
+            p3 = new Vector3(-14.1f, 0, 5);
         }
     }
 }

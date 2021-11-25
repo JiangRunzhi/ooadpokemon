@@ -10,7 +10,7 @@ public class CameraSwitch : MonoBehaviour
     
     void Update()
     {
-        if (Time.frameCount - frame < 600)
+        if (Time.frameCount - frame < 400)
         {
             transform.RotateAround(pokemon.transform.position, Vector3.up, 60 * Time.deltaTime);
             transform.LookAt(pokemon.transform.position);
@@ -26,7 +26,7 @@ public class CameraSwitch : MonoBehaviour
     public void Set(String pokemonName)
     {
         pokemon = GameObject.Find(pokemonName);
-        transform.position = new Vector3(0, 10, 5);
+        transform.position = new Vector3(0, 8, 5);
         transform.LookAt(pokemon.transform.position);
         frame = Time.frameCount;
     }

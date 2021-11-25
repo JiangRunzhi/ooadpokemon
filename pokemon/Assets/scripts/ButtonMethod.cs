@@ -69,7 +69,7 @@ public class ButtonMethod : MonoBehaviour
         go.GetComponent<DataBase>().Appear1();
         go.GetComponent<DataBase>().number1 = 0;
         go.GetComponent<DataBase>().number2 = 0;
-        Invoke("SecondAppear",6f);
+        Invoke("SecondAppear",4f);
     }
 
     public void SecondAppear()
