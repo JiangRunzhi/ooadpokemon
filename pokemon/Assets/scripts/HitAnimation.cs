@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 
 //Left Attacks, Right Hurts
 //Set: Left object, Right object
@@ -18,7 +19,7 @@ public class HitAnimation : MonoBehaviour
     public bool judge1;
     public Vector3 p1;
     public Vector3 p2;
-
+    public GameObject CombatInfoLable;
     void Start()
     {
 
@@ -142,10 +143,12 @@ public class HitAnimation : MonoBehaviour
         GameObject go = GameObject.Find("Window");
         if (leftHitRight)
         {
+            CombatInfoLable.GetComponent<Text>().text = GameObject.Find("Window").GetComponent<DataBase>().Translate2(GameObject.Find("Window").GetComponent<DataBase>().pokemon2.type) + "不行了...";
             go.GetComponent<DataBase>().Disappear2();
         }
         else
         {
+            CombatInfoLable.GetComponent<Text>().text = GameObject.Find("Window").GetComponent<DataBase>().Translate2(GameObject.Find("Window").GetComponent<DataBase>().pokemon1.type) + "不行了...";
             go.GetComponent<DataBase>().Disappear1();
         }
         enabled = false;
