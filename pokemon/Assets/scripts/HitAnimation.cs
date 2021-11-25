@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 //Left Attacks, Right Hurts
@@ -17,8 +18,10 @@ public class HitAnimation : MonoBehaviour
     public bool judge1;
     public Vector3 p1;
     public Vector3 p2;
+
     void Start()
     {
+
         animator1 = pokemon1.GetComponent<Animator>();
         animator2 = pokemon2.GetComponent<Animator>();
         animator1.SetBool("move", false);
@@ -33,6 +36,7 @@ public class HitAnimation : MonoBehaviour
             p1 = new Vector3(-4, 0, 5);
             p2 = new Vector3(10, 0, 5);
         }
+
     }
 
     // Update is called once per frame
@@ -40,6 +44,7 @@ public class HitAnimation : MonoBehaviour
     {
         animator1 = pokemon1.GetComponent<Animator>();
         animator2 = pokemon2.GetComponent<Animator>();
+        
         if (leftHitRight)
         {
             p1 = new Vector3(4, 0, 5);
@@ -54,7 +59,9 @@ public class HitAnimation : MonoBehaviour
         {
             animator1.SetBool("move",true);
             animator1.SetFloat("speed",2f);
+
             pokemon1.transform.position = Vector3.MoveTowards(pokemon1.transform.position, p1, Time.deltaTime * 20);
+            
         }
         else if (judge1)
         {
@@ -65,7 +72,6 @@ public class HitAnimation : MonoBehaviour
         else if (pokemon1.transform.position != p2)
         {
             Invoke("run",1.0f);
-            
         }
         else
         {
@@ -75,6 +81,7 @@ public class HitAnimation : MonoBehaviour
             }
             enabled = false;
         }
+
     }
     
     
@@ -153,4 +160,6 @@ public class HitAnimation : MonoBehaviour
         dodge = miss;
         dead = death;
     }
+    
+
 }

@@ -18,9 +18,6 @@ namespace ConsoleApp3
                 }
             }
 
-
-
-
             int[] duru = new int[6];
             int count = 0;
             string line = "";

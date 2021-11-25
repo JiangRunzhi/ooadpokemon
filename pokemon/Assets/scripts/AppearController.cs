@@ -16,6 +16,8 @@ public class AppearController : MonoBehaviour
     public GameObject dragon2;
     public GameObject mouse2;
     public GameObject mud2;
+    
+    
 
     public void Set(string objectName, bool status)
     {
@@ -79,4 +81,6 @@ public class AppearController : MonoBehaviour
             mud2.SetActive(status);
         }
     }
+
+
 }
