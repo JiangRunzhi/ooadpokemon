@@ -10,6 +10,7 @@ public class DebuffAnimation : MonoBehaviour
     {
         animator = pokemon.GetComponent<Animator>();
         animator.SetTrigger("debuff");
+        sound_manager.play_effect("sounds/down");
         enabled = false;
     }
 

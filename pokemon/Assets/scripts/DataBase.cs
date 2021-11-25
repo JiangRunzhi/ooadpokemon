@@ -343,12 +343,14 @@ public class DataBase : MonoBehaviour
     {
         Debug.Log("右边赢了，游戏结束");
         CombatInfoLable.GetComponent<Text>().text = "右边的队伍取得了胜利！";
+        GameObject.Find("Music").GetComponent<defeated>().defeateds();
         SceneManager.LoadScene(4);
     }
     public void win()
     {
         Debug.Log("左边赢了，游戏结束");
         CombatInfoLable.GetComponent<Text>().text = "左边的队伍取得了胜利！";
+        GameObject.Find("Music").GetComponent<victory>().victorys();
         SceneManager.LoadScene(3);
     }
 

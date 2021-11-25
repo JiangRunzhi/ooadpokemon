@@ -10,6 +10,7 @@ public class BuffAnimation : MonoBehaviour
     {
         animator = pokemon.GetComponent<Animator>();
         animator.SetTrigger("buff");
+        sound_manager.play_effect("sounds/up");
         enabled = false;
     }
 

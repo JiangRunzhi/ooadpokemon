@@ -67,6 +67,8 @@ public class HitAnimation : MonoBehaviour
         else if (judge1)
         {
             animator1.SetTrigger("hit");
+            
+            sound_manager.play_effect("sounds/hit");
             Invoke("hurt",0.3f);
             judge1 = false;
         }

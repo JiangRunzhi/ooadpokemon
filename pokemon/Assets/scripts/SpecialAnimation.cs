@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,13 +20,36 @@ public class SpecialAnimation : MonoBehaviour
     public Vector3 p1;
     public Vector3 p2;
     public Vector3 p3;
- 
+    private String music1;
+    private String music2;
+
     // Update is called once per frame
     void Update()
     {
         if (judge1)
         {
             animator1.SetTrigger("special");
+            // effort
+            if (music1 == "dragon1" || music1 == "dragon2")
+            {
+                sound_manager.play_effect("sounds/dragonFire");
+            } else if (music1 == "mouse1" || music1 == "mouse2")
+            {
+                sound_manager.play_effect("sounds/mouseLight");
+            } else if (music1 == "turtle1" || music1 == "turtle2")
+            {
+                sound_manager.play_effect("sounds/turtleWater");
+            } else if (music1 == "bird1" || music1 == "bird2")
+            {
+                sound_manager.play_effect("sounds/birdHit");
+            } else if (music1 == "seed1" || music1 == "seed2")
+            {
+                sound_manager.play_effect("sounds/seedHit");
+            }
+            else
+            {
+                sound_manager.play_effect("sounds/mudHoul");
+            }
             judge1 = false;
             Invoke("hurt",1f);
         }
@@ -99,6 +123,8 @@ public class SpecialAnimation : MonoBehaviour
 
     public void Set(string name1, string name2,bool dir,bool miss,bool death)
     {
+        music1 = name1;
+        music2 = name2;
         pokemon1 = GameObject.Find(name1);
         pokemon2 = GameObject.Find(name2);
         judge1 = true;

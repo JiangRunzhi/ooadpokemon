@@ -9,16 +9,25 @@ public class sound_manager
     static bool is_music_mute = false;//存放当前全局背景音乐是否静音的变量
     static bool is_effect_mute = false;//存放当前音效是否静音的变量
 
-    private static float music_volume = 1.0f;
-    private static float effect_volume = 1.0f;
-    
+    public static float music_volume = 1.0f;
+    public static float effect_volume = 1.0f;
+    public static float main_volume = 1.0f;
+
+    private static bool inits = false;
     // url --> AudioSource 映射, 区分音乐，音效
     static Dictionary<string, AudioSource> musics=null;//音乐表
     static Dictionary<string, AudioSource> effects = null;//音效表
     
     
+    
     public static void init()
     {
+        if (inits)
+        {
+            return;
+        }
+
+        inits = true;
         sound_play_object = new GameObject("sound_play_object");//初始化根节点
         //sound_play_object.AddComponent<sound_scan>();//把 声音检测组件挂载到根节点下
         GameObject.DontDestroyOnLoad(sound_play_object);//场景切换的时候不会删除根节点
@@ -43,6 +52,14 @@ public class sound_manager
         }
     }
 
+    public static void set_main_volumn(float value)
+    {
+        if (value >= 0 && value <= 1.0f)
+        {
+            main_volume = value;
+        }
+    }
+    
     public static void set_music_volumn(float value)
     {
         if (value >= 0 && value <= 1.0f)
@@ -51,7 +68,7 @@ public class sound_manager
             
             foreach (KeyValuePair<string, AudioSource> kv in musics)
             {
-                kv.Value.volume = music_volume;
+                kv.Value.volume = music_volume*main_volume;
             }
         }
     }
@@ -60,7 +77,10 @@ public class sound_manager
     {
         if (value >= 0 && value <= 1.0f)
         {
-            effect_volume = value;
+            foreach (KeyValuePair<string, AudioSource> kv in effects)
+            {
+                kv.Value.volume = effect_volume*main_volume;
+            }
         }
     }
 
@@ -86,7 +106,7 @@ public class sound_manager
             audio_source.loop = is_loop;//设置组件循环播放
             audio_source.playOnAwake = true;//再次唤醒时播放声音
             audio_source.spatialBlend = 0.0f;//设置为2D声音
-            //audio_source.volume = music_volume;
+            audio_source.volume = music_volume;
 
 
             musics.Add(url, audio_source);//加入到背景音乐字典中，下次就可以直接赋值了
