@@ -60,6 +60,7 @@ public class ButtonMethod : MonoBehaviour
     
     public void InitialAppear()
     {
+        go.GetComponent<DataBase>().Read();
         game_start.SetActive(false);
         CombatInfoLable.GetComponent<Text>().text = "战斗就要开始了！！！";
         CombatInfo.SetActive(true);
@@ -68,7 +69,7 @@ public class ButtonMethod : MonoBehaviour
         go.GetComponent<DataBase>().Appear1();
         go.GetComponent<DataBase>().number1 = 0;
         go.GetComponent<DataBase>().number2 = 0;
-        Invoke("SecondAppear",8f);
+        Invoke("SecondAppear",6f);
     }
 
     public void SecondAppear()

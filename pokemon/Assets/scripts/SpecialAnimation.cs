@@ -36,18 +36,6 @@ public class SpecialAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (leftHitRight)
-        {
-            p1 = new Vector3(14, 0, 5);
-            p2 = new Vector3(10, 0, 5);
-        }
-        else
-        {
-            p1 = new Vector3(-14, 0, 5);
-            p2 = new Vector3(-10, 0, 5);
-        }
-        animator1 = pokemon1.GetComponent<Animator>();
-        animator2 = pokemon2.GetComponent<Animator>();
         if (judge1)
         {
             animator1.SetTrigger("special");
@@ -58,10 +46,12 @@ public class SpecialAnimation : MonoBehaviour
         {
             if (pokemon2.transform.position != p2)
             {
-                Invoke("run",0f);
+                animator2.SetBool("move",true);
+                pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
             }
             else
             {
+                animator2.SetBool("move",false);
                 if (dead)
                 {
                     Invoke("die",6f);
@@ -90,15 +80,7 @@ public class SpecialAnimation : MonoBehaviour
 
     public void run()
     {
-        if (pokemon2.transform.position != p2)
-        {
-            animator2.SetBool("move",true);
-            pokemon2.transform.position = Vector3.MoveTowards(pokemon2.transform.position, p2, Time.deltaTime * 10);
-        }
-        else
-        {
-            animator2.SetBool("move",false);
-        }
+        
     }
 
     public void die()
@@ -125,5 +107,17 @@ public class SpecialAnimation : MonoBehaviour
         leftHitRight = dir;
         dodge = miss;
         dead = death;
+        animator1 = pokemon1.GetComponent<Animator>();
+        animator2 = pokemon2.GetComponent<Animator>();
+        if (leftHitRight)
+        {
+            p1 = new Vector3(14, 0, 5);
+            p2 = new Vector3(10, 0, 5);
+        }
+        else
+        {
+            p1 = new Vector3(-14, 0, 5);
+            p2 = new Vector3(-10, 0, 5);
+        }
     }
 }

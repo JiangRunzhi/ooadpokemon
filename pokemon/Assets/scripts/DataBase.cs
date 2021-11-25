@@ -25,8 +25,8 @@ public class DataBase : MonoBehaviour
     public int[] defense = {3, 3, 4, 3, 3, 3};
     public int[] attack = {6, 8, 6, 6, 8, 10};
     public int[] speed = {3, 4, 3, 4, 6, 3};
-    public int[] player1List = {1,2,3};
-    public int[] player2List = {0,1,4};
+    public int[] player1List = new int[3];
+    public int[] player2List = new int[3];
 
     public String[] skillA = {"撞击(普)", "抓(普)", "撞击(普)", "泼沙(普)", "撞击(普)", "拍打(普)"};
     public String[] skillB = {"剑之舞(草)", "火焰放射(火)", "水炮(水)", "翅膀拍击(飞)","十万伏特(电)","淤泥攻击(毒)" };
@@ -55,6 +55,8 @@ public class DataBase : MonoBehaviour
         
         Set1();
         ac.GetComponent<AppearController>().Set(Translate(player1List[number1], 1), true);
+        mc.GetComponent<CameraSwitch>().Set(Translate(player1List[number1],1));
+        mc.GetComponent<CameraSwitch>().enabled = true;
         ac.GetComponent<AppearAnimation>().Set(Translate(player1List[number1], 1));
         bp.GetComponent<BloodPrefab>().hpLeft = pokemon1.hp;
         bp.GetComponent<BloodPrefab>().newBloodRollLeft = true;
@@ -65,6 +67,8 @@ public class DataBase : MonoBehaviour
     {
         Set2();
         ac.GetComponent<AppearController>().Set(Translate(player2List[number2], 2), true);
+        mc.GetComponent<CameraSwitch>().Set(Translate(player2List[number2],2));
+        mc.GetComponent<CameraSwitch>().enabled = true;
         ac.GetComponent<AppearAnimation>().Set(Translate(player2List[number2], 2));
         bp.GetComponent<BloodPrefab>().hpRight = pokemon2.hp;
         bp.GetComponent<BloodPrefab>().newBloodRollRight = true;

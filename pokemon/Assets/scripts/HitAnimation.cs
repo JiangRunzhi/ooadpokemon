@@ -143,12 +143,10 @@ public class HitAnimation : MonoBehaviour
         GameObject go = GameObject.Find("Window");
         if (leftHitRight)
         {
-            CombatInfoLable.GetComponent<Text>().text = GameObject.Find("Window").GetComponent<DataBase>().Translate2(GameObject.Find("Window").GetComponent<DataBase>().pokemon2.type) + "不行了...";
             go.GetComponent<DataBase>().Disappear2();
         }
         else
         {
-            CombatInfoLable.GetComponent<Text>().text = GameObject.Find("Window").GetComponent<DataBase>().Translate2(GameObject.Find("Window").GetComponent<DataBase>().pokemon1.type) + "不行了...";
             go.GetComponent<DataBase>().Disappear1();
         }
         enabled = false;
