@@ -70,7 +70,6 @@ namespace UnityEngine.UI
         /// </summary>
         /// <example>
         /// <code>
-        /// <![CDATA[
         /// //Attach this script to a Toggle GameObject. To do this, go to Create>UI>Toggle.
         /// //Set your own Text in the Inspector window
         ///
@@ -101,8 +100,7 @@ namespace UnityEngine.UI
         ///         m_Text.text =  "New Value : " + m_Toggle.isOn;
         ///     }
         /// }
-        /// ]]>
-        ///</code>
+        /// </code>
         /// </example>
         public ToggleEvent onValueChanged = new ToggleEvent();
 
@@ -203,7 +201,6 @@ namespace UnityEngine.UI
         /// </summary>
         /// <example>
         /// <code>
-        /// <![CDATA[
         /// /Attach this script to a Toggle GameObject. To do this, go to Create>UI>Toggle.
         /// //Set your own Text in the Inspector window
         ///
@@ -234,8 +231,7 @@ namespace UnityEngine.UI
         ///         m_Text.text =  "Toggle is : " + m_Toggle.isOn;
         ///     }
         /// }
-        /// ]]>
-        ///</code>
+        /// </code>
         /// </example>
 
         public bool isOn

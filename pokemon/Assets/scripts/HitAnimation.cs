@@ -80,7 +80,7 @@ public class HitAnimation : MonoBehaviour
         {
             if (dead)
             {
-                Invoke("die",6f);
+                Invoke("die",4f);
             }
             enabled = false;
         }

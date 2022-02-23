@@ -10,7 +10,7 @@ public class CameraSwitch : MonoBehaviour
     
     void Update()
     {
-        if (Time.frameCount - frame < 400)
+        if (Time.frameCount - frame < 250)
         {
             transform.RotateAround(pokemon.transform.position, Vector3.up, 60 * Time.deltaTime);
             transform.LookAt(pokemon.transform.position);

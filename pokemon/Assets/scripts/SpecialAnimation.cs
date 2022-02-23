@@ -10,6 +10,16 @@ public class SpecialAnimation : MonoBehaviour
     // Start is called before the first frame update
     public GameObject pokemon1;
     public GameObject pokemon2;
+    public GameObject fire1;
+    public GameObject fire2;
+    public GameObject water1;
+    public GameObject water2;
+    public GameObject dirt1;
+    public GameObject dirt2;
+    public GameObject lighting1;
+    public GameObject lighting2;
+    public GameObject wind1;
+    public GameObject wind2;
     public Animator animator1;
     public Animator animator2;
     public bool judge1;
@@ -32,15 +42,48 @@ public class SpecialAnimation : MonoBehaviour
             // effort
             if (music1 == "dragon1" || music1 == "dragon2")
             {
+                if (music1 == "dragon1")
+                {
+                    Invoke("fire1set",1f);
+                }
+                else
+                {
+                    Invoke("fire2set",1f);
+                }
+
                 sound_manager.play_effect("sounds/dragonFire");
             } else if (music1 == "mouse1" || music1 == "mouse2")
             {
+                if (music1 == "mouse1")
+                {
+                    Invoke("lighting1set",0.5f);
+                }
+                else
+                {
+                    Invoke("lighting2set",0.5f);
+                }
                 sound_manager.play_effect("sounds/mouseLight");
             } else if (music1 == "turtle1" || music1 == "turtle2")
             {
+                if (music1 == "turtle1")
+                {
+                    Invoke("water1set",1f);
+                }
+                else
+                {
+                    Invoke("water2set",1f);
+                }
                 sound_manager.play_effect("sounds/turtleWater");
             } else if (music1 == "bird1" || music1 == "bird2")
             {
+                if (music1 == "bird1")
+                {
+                    Invoke("wind1set",0.5f);
+                }
+                else
+                {
+                    Invoke("wind2set",0.5f);
+                }
                 sound_manager.play_effect("sounds/birdHit");
             } else if (music1 == "seed1" || music1 == "seed2")
             {
@@ -48,6 +91,14 @@ public class SpecialAnimation : MonoBehaviour
             }
             else
             {
+                if (music1 == "mud1")
+                {
+                    Invoke("dirt1set",1f);
+                }
+                else
+                {
+                    Invoke("dirt2set",1f);
+                }
                 sound_manager.play_effect("sounds/mudHoul");
             }
             judge1 = false;
@@ -75,15 +126,79 @@ public class SpecialAnimation : MonoBehaviour
                     animator2.SetBool("move",false);
                     if (dead)
                     {
-                        Invoke("die",6f);
+                        Invoke("die",4f);
                     }
                     enabled = false;
                 }
             }
         }
     }
-    
-    
+
+    public void fire1set()
+    {
+        fire1.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void fire2set()
+    {
+        fire2.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void lighting1set()
+    {
+        lighting1.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void lighting2set()
+    {
+        lighting2.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void water1set()
+    {
+        water1.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void water2set()
+    {
+        water2.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void dirt1set()
+    {
+        dirt1.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void dirt2set()
+    {
+        dirt2.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void wind1set()
+    {
+        wind1.SetActive(true);
+        Invoke("reset",2f);
+    }
+    public void wind2set()
+    {
+        wind2.SetActive(true);
+        Invoke("reset",2f);
+    }
+
+    public void reset()
+    {
+        fire1.SetActive(false);
+        fire2.SetActive(false);
+        water1.SetActive(false);
+        water2.SetActive(false);
+        dirt1.SetActive(false);
+        dirt2.SetActive(false);
+        wind1.SetActive(false);
+        wind2.SetActive(false);
+        lighting1.SetActive(false);
+        lighting2.SetActive(false);
+    }
+
     public void hurt()
     {
         if (dodge)
